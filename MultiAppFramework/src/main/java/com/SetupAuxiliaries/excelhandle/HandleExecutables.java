@@ -3,9 +3,9 @@ package com.SetupAuxiliaries.excelhandle;
 import java.util.ArrayList;
 
 public class HandleExecutables {
-	public static String runManagerPath="F:\\Project Workspace\\MultiAppFramework\\MultiAppFramework\\src\\main\\java\\com\\DataTables\\MainTables\\RunManager.xlsx";
+	public static String runManagerPath="C:\\Users\\Rahul Chakrabarty\\git\\ITQA-MultiAppFramework\\MultiAppFramework\\src\\main\\java\\com\\DataTables\\MainTables\\RunManager.xlsx";
 	public static String runManagerSheet="Google";
-	public static String pathTestScenario="F:\\Project Workspace\\MultiAppFramework\\MultiAppFramework\\src\\main\\java\\com\\DataTables\\MainTables\\TestScenarios.xlsx";
+	public static String pathTestScenario="C:\\Users\\Rahul Chakrabarty\\git\\ITQA-MultiAppFramework\\MultiAppFramework\\src\\main\\java\\com\\DataTables\\MainTables\\TestScenarios.xlsx";
     
 	
 	 //get all Executable test cases in  arraylist

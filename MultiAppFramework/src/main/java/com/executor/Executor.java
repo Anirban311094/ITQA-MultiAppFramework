@@ -22,12 +22,12 @@ public class Executor {
     public static WebDriver initializeDriver() {
         WebDriverManager.chromedriver().setup();
         ChromeDriverService service = new ChromeDriverService.Builder()
-                .usingDriverExecutable(new File("F:\\\\Project Workspace\\\\MultiAppFramework\\\\MultiAppFramework\\\\src\\\\main\\\\java\\\\com\\\\BrowserDrivers\\\\chromedriver.exe"))
+                .usingDriverExecutable(new File("C:\\Users\\Rahul Chakrabarty\\git\\ITQA-MultiAppFramework\\MultiAppFramework\\src\\main\\java\\com\\BrowserDrivers\\chromedriver.exe"))
                 .usingAnyFreePort()
                 .build();
 
         ChromeOptions options = new ChromeOptions();
-        options.setBinary("C:\\Users\\Rahul Chakrabarty\\Downloads\\chrome-win64\\chrome.exe");
+        options.setBinary("C:\\Users\\Rahul Chakrabarty\\git\\ITQA-MultiAppFramework\\MultiAppFramework\\src\\main\\resources\\chrome-win64\\chrome.exe");
         options.addArguments("--remote-allow-origins=*");
 
         return new ChromeDriver(service, options);
