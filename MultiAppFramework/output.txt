@@ -1,0 +1,678 @@
+18:56:16.496 [main] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient - ex-0000000001 preparing request execution
+18:56:16.526 [main] DEBUG org.apache.hc.client5.http.protocol.RequestAddCookies - ex-0000000001 Cookie spec selected: strict
+18:56:16.541 [main] DEBUG org.apache.hc.client5.http.protocol.RequestAuthCache - ex-0000000001 Auth cache not set in the context
+18:56:16.541 [main] DEBUG org.apache.hc.client5.http.impl.classic.ProtocolExec - ex-0000000001 target auth state: UNCHALLENGED
+18:56:16.543 [main] DEBUG org.apache.hc.client5.http.impl.classic.ProtocolExec - ex-0000000001 proxy auth state: UNCHALLENGED
+18:56:16.543 [main] DEBUG org.apache.hc.client5.http.impl.classic.ConnectExec - ex-0000000001 acquiring connection with route {s}->https://raw.githubusercontent.com:443
+18:56:16.543 [main] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient - ex-0000000001 acquiring endpoint (3 MINUTES)
+18:56:16.547 [main] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ex-0000000001 endpoint lease request (3 MINUTES) [route: {s}->https://raw.githubusercontent.com:443][total available: 0; route allocated: 0 of 5; total allocated: 0 of 25]
+18:56:16.561 [main] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ex-0000000001 endpoint leased [route: {s}->https://raw.githubusercontent.com:443][total available: 0; route allocated: 1 of 5; total allocated: 1 of 25]
+18:56:16.593 [main] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ex-0000000001 acquired ep-0000000000
+18:56:16.594 [main] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient - ex-0000000001 acquired endpoint ep-0000000000
+18:56:16.594 [main] DEBUG org.apache.hc.client5.http.impl.classic.ConnectExec - ex-0000000001 opening connection {s}->https://raw.githubusercontent.com:443
+18:56:16.595 [main] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient - ep-0000000000 connecting endpoint (30 SECONDS)
+18:56:16.596 [main] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-0000000000 connecting endpoint to https://raw.githubusercontent.com:443 (30 SECONDS)
+18:56:16.808 [main] DEBUG org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator - http-outgoing-0 connecting to raw.githubusercontent.com/185.199.108.133:443
+18:56:16.808 [main] DEBUG org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory - Connecting socket to raw.githubusercontent.com/185.199.108.133:443 with timeout 30 SECONDS
+18:56:17.144 [main] DEBUG org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory - Enabled protocols: [TLSv1.3, TLSv1.2]
+18:56:17.144 [main] DEBUG org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory - Enabled cipher suites: [TLS_AES_256_GCM_SHA384, TLS_AES_128_GCM_SHA256, TLS_CHACHA20_POLY1305_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_CHACHA20_POLY1305_SHA256, TLS_DHE_DSS_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_DHE_DSS_WITH_AES_256_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_DSS_WITH_AES_256_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_GCM_SHA384, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_256_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
+18:56:17.145 [main] DEBUG org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory - Starting handshake
+18:56:17.617 [main] DEBUG org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory - Secure session established
+18:56:17.618 [main] DEBUG org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory -  negotiated protocol: TLSv1.3
+18:56:17.618 [main] DEBUG org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory -  negotiated cipher suite: TLS_AES_128_GCM_SHA256
+18:56:17.618 [main] DEBUG org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory -  peer principal: CN=*.github.io, O="GitHub, Inc.", L=San Francisco, ST=California, C=US
+18:56:17.621 [main] DEBUG org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory -  peer alternative names: [*.github.io, github.io, githubusercontent.com, www.github.com, *.github.com, *.githubusercontent.com, github.com]
+18:56:17.621 [main] DEBUG org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory -  issuer principal: CN=DigiCert Global G2 TLS RSA SHA256 2020 CA1, O=DigiCert Inc, C=US
+18:56:17.622 [main] DEBUG org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator - http-outgoing-0 connection established 192.168.194.221:55655<->185.199.108.133:443
+18:56:17.623 [main] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-0000000000 connected http-outgoing-0
+18:56:17.623 [main] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient - ep-0000000000 endpoint connected
+18:56:17.624 [main] DEBUG org.apache.hc.client5.http.impl.classic.MainClientExec - ex-0000000001 executing GET /bonigarcia/webdrivermanager/master/src/main/resources/commands.properties HTTP/1.1
+18:56:17.624 [main] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient - ep-0000000000 start execution ex-0000000001
+18:56:17.625 [main] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-0000000000 executing exchange ex-0000000001 over http-outgoing-0
+18:56:17.626 [main] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 >> GET /bonigarcia/webdrivermanager/master/src/main/resources/commands.properties HTTP/1.1
+18:56:17.626 [main] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 >> user-agent: Apache-HttpClient/5.0
+18:56:17.626 [main] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 >> accept-encoding: gzip, deflate, br
+18:56:17.626 [main] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 >> cache-control: max-age=0
+18:56:17.626 [main] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 >> connection: keep-alive
+18:56:17.626 [main] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 >> Host: raw.githubusercontent.com
+18:56:17.626 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 >> "GET /bonigarcia/webdrivermanager/master/src/main/resources/commands.properties HTTP/1.1[\r][\n]"
+18:56:17.626 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 >> "user-agent: Apache-HttpClient/5.0[\r][\n]"
+18:56:17.626 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 >> "accept-encoding: gzip, deflate, br[\r][\n]"
+18:56:17.626 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 >> "cache-control: max-age=0[\r][\n]"
+18:56:17.626 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 >> "connection: keep-alive[\r][\n]"
+18:56:17.627 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 >> "Host: raw.githubusercontent.com[\r][\n]"
+18:56:17.627 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 >> "[\r][\n]"
+18:56:17.886 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+18:56:17.887 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "Connection: keep-alive[\r][\n]"
+18:56:17.887 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "Content-Length: 745[\r][\n]"
+18:56:17.887 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "Cache-Control: max-age=300[\r][\n]"
+18:56:17.887 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox[\r][\n]"
+18:56:17.887 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "Content-Type: text/plain; charset=utf-8[\r][\n]"
+18:56:17.888 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "ETag: W/"dd41edff335272162022217759820159dac501cff56850e2510f504462cd9b5f"[\r][\n]"
+18:56:17.888 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "Strict-Transport-Security: max-age=31536000[\r][\n]"
+18:56:17.888 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "X-Content-Type-Options: nosniff[\r][\n]"
+18:56:17.888 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "X-Frame-Options: deny[\r][\n]"
+18:56:17.888 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "X-XSS-Protection: 1; mode=block[\r][\n]"
+18:56:17.888 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "X-GitHub-Request-Id: CAD5:30E848:120254:1611E2:667B3BAC[\r][\n]"
+18:56:17.888 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "Content-Encoding: gzip[\r][\n]"
+18:56:17.889 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "Accept-Ranges: bytes[\r][\n]"
+18:56:17.889 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "Date: Sun, 21 Jul 2024 13:26:18 GMT[\r][\n]"
+18:56:17.889 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "Via: 1.1 varnish[\r][\n]"
+18:56:17.889 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "X-Served-By: cache-bom4725-BOM[\r][\n]"
+18:56:17.889 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "X-Cache: HIT[\r][\n]"
+18:56:17.889 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "X-Cache-Hits: 2[\r][\n]"
+18:56:17.889 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "X-Timer: S1721568379.508719,VS0,VE0[\r][\n]"
+18:56:17.889 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "Vary: Authorization,Accept-Encoding,Origin[\r][\n]"
+18:56:17.889 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "Access-Control-Allow-Origin: *[\r][\n]"
+18:56:17.889 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "Cross-Origin-Resource-Policy: cross-origin[\r][\n]"
+18:56:17.889 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "X-Fastly-Request-ID: de58118dee0bc7a74d58230e7ef10bfd9a4accc3[\r][\n]"
+18:56:17.889 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "Expires: Sun, 21 Jul 2024 13:31:18 GMT[\r][\n]"
+18:56:17.889 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "Source-Age: 164[\r][\n]"
+18:56:17.889 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "[\r][\n]"
+18:56:17.893 [main] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << HTTP/1.1 200 OK
+18:56:17.894 [main] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << Connection: keep-alive
+18:56:17.894 [main] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << Content-Length: 745
+18:56:17.894 [main] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << Cache-Control: max-age=300
+18:56:17.894 [main] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+18:56:17.894 [main] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << Content-Type: text/plain; charset=utf-8
+18:56:17.894 [main] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << ETag: W/"dd41edff335272162022217759820159dac501cff56850e2510f504462cd9b5f"
+18:56:17.894 [main] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << Strict-Transport-Security: max-age=31536000
+18:56:17.894 [main] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << X-Content-Type-Options: nosniff
+18:56:17.894 [main] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << X-Frame-Options: deny
+18:56:17.894 [main] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << X-XSS-Protection: 1; mode=block
+18:56:17.894 [main] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << X-GitHub-Request-Id: CAD5:30E848:120254:1611E2:667B3BAC
+18:56:17.894 [main] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << Content-Encoding: gzip
+18:56:17.894 [main] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << Accept-Ranges: bytes
+18:56:17.894 [main] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << Date: Sun, 21 Jul 2024 13:26:18 GMT
+18:56:17.894 [main] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << Via: 1.1 varnish
+18:56:17.894 [main] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << X-Served-By: cache-bom4725-BOM
+18:56:17.894 [main] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << X-Cache: HIT
+18:56:17.895 [main] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << X-Cache-Hits: 2
+18:56:17.895 [main] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << X-Timer: S1721568379.508719,VS0,VE0
+18:56:17.895 [main] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << Vary: Authorization,Accept-Encoding,Origin
+18:56:17.895 [main] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << Access-Control-Allow-Origin: *
+18:56:17.895 [main] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << Cross-Origin-Resource-Policy: cross-origin
+18:56:17.895 [main] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << X-Fastly-Request-ID: de58118dee0bc7a74d58230e7ef10bfd9a4accc3
+18:56:17.895 [main] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << Expires: Sun, 21 Jul 2024 13:31:18 GMT
+18:56:17.895 [main] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << Source-Age: 164
+18:56:17.902 [main] DEBUG org.apache.hc.client5.http.impl.classic.MainClientExec - ex-0000000001 connection can be kept alive for 3 MINUTES
+18:56:17.923 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "[0x1f][0xffffff8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3][0xffffffb5]W]o[0xffffffda]0[0x14]}[0xffffffe7]W\QUj% [0x1b][0xffffffad][0xffffffa6]i[0x12][0xf]4c[0xffffffdd]4*[0x18][0xffffffb4][0xffffffdd]&[0xfffffff9][0xffffffc5]$N[0xffffffb0][0xffffff94][0xffffffd8][0xffffffc8]NJ[0xffffffb7]_?[0xffffffdb][0xfffffff9]X[0xffffff92]:[0xffffffa3]k[0xffffffe8][0x1b][0xffffffb6][0xffffffef]=[0xffffffe7][0xffffffd8][0xfffffff7][0xffffffe4][0xffffffda][0xffffff9c][0xffffff80][0xffffffcb][0xffffffe3][0x18]3_[0xffffff82][0xffffff8f][0x13][0xffffffbc][0xffffffc1][0xffffff92][0xfffffff4]N[0xffffffe0]vK%[0x4]4"[0xffffffe0]q[0xffffff96]`[0xffffffca]$$[=[0xffffffc8]C[0x13][0xe][0x1b][0x2][0xffffffe4][0xffffff91]xiB|[0xffffffa0][0xffffffcc],[0xffffffcb]-[0xffffff89]"=[0xffffffe0][0xffffffc2]'B[0x7][0xfffffff9]$!^b[0x16][0x1f][0xffffff88][0xffffff90][0xffffff94][0xffffffab][0xffffffb5][0x0][0xffffff88][0xfffffffa][0x1d][\n]"
+18:56:17.925 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "B[0x18]l[0x4][0xffffffdf]K[0xffffffb5][0xffffffa0]([0xffffffcf][0xffffffdc][0xffffffad][0xffffffe0]1[0x19][0xffffffc0]'*H[0xffffffc0][0x1f][0x7][0xffffffb0][0xffffffd8][0x11][0xffffff81][0x7]0[0xfffffff3]C5kVi[0x1a][0xffffff9f]k|[0xffffff9f][0x6][0x1][0x11][0xffffff84]%[0xffffffc0]uLBY[0x8][0xfffffff2][0xffffff97]LH,[0xffffffe1][0xffffffec];e[0xffffffbe]B[0x1d][0xffffffc0][0xffffff9c][0xffffffb2]T[0xffffffc1][0xffffffdc]`[0xf][0x16][0xffffffeb][0xfffffff3][0xffffff9e][0xffffffe2][0xffffffc8](z[0xfffffff9]6F[0xffffff9e][0x19][0xffffff8e][0xfffffff6]Y[0xffffffc2][0xffffffe8][0xffffffcd][0xffffffdb][0xffffff89][0x17][0xfffffffb]#[0xffffffb5]+p\[0xffffffd8][0xffffffc7][0xffffffd4]3Gb[0xffffff8e]a[0xffffffbf]U|[0xffffffc0]pL&[0xfffffffd][0xffffffd3][0xffffffe5]jq[0xffffffbd][0xffffff9a][0xffffffde]|[0xfffffffa]2[0xffffff9f][0xffffffad]?[0xffffffa0][0x9]B[0xffffffa7][0x8]]s[0x1e]F[0x4][0xffffffa1][0xffffff8c][0x2][0xffffffa1][0xffffffe9]n[0x17]QOI[0xffffffe3][0xc][0xffffffa1][0xffffff9c]H![0xfffffff7]!$[0x9][0xffffffdc][0xffffffe7]g[0xffffffe1]<[0xffffffe0](m[0xffffffd7]3~[0xffffff81][0xffffff9e][0xffffffb3][0x1f][0xffffffef][0xffffffdf][0xffffff9d][0xffffffbf][0xffffffa6][0xffffffa8][0xffffff8b]g[0xffffff8a][0xffffff9a]/[0xffffffdc][0xffffffe9]|[0xffffffba]\~[0xffffff9c][0xffffffde]N_S[0xffffffcf][0xffffffe5]d5[0xffffffbb][0xffffff86]ow[0xffffffb3][0xffffffd5]O[0xfffffff8][0xfffffffc][0xffffffd5][0xffffffbd]Ck[0x1e]${,H[0xffffffc1][0xffffff96][0xffffff93]][0xffffffcd][0xffffffaf][0x8][0xfffffff6][0xc]^[0xffffffe1][0xffffffc5]^[0x13]4[0xffffffd2][0xffffff8e][0xffffffd1]>pR)[0xffffff9c][\r]eNh0[0xffffff86][0xffffffd9]:[0xc][0xffffff87]E[0xffffffa6]=q<i[0xffffff8b]o&[0xffffffc4][0xffffffd8]3<[0xffffff95][0x13][0xffffff90]N&8w[0xffffffe9][0x8][0xffffffef]v[0xffffff8e][0xffffffab][0xffffffbe]>es[0xffffffe9]([0x13]/[0xffffffd6][0xfffffff5][0xffffff80]*[0xffffffba][0xfffffff2]v[0xfffffffe][0xffffffd9][0xffffff94]DA6>[0xffffff8e][0xffffffbb]o[0xfffffff8]o[0x1a]E[0xffffffb8] A[0xffffffa8]@?T[0xffffffad]'*:{[0xfffffffa]xR.*[0xffffffce][0xffffffe9][0xffffffd7][0xffffffad][0xffffff93][0xffffff93]4[0xffffffc9][0xfffffffa][0xffffffda]<n*t[0xffffffeb][0xffffffb9]oV[0xffffffb6][0xffffffc0]/M[0xffffff94]O[0xffffffc0][0xfffffff0][0xffffffe1]i[0xffffff90][0xffffffb5][0xfffffffe]9[0xffffff8b][0xffffffad][0xfffffff2]U,Ul[0xffffffdd][0x13]KL[0xffffffa2][0x6][0xffffffdd][0xffffffca]\?`[0xffffffea][0x9].[0xffffffd5]I [0xffffffa4]i[0x1a]_i,[\r][0xffffffdd][0xffffffa1][0xffffffc3][0xffffffae]kzI[0xffffffd1]_Q[0xffffffce]Ek[0xffffffcb][0xfffffff8]Kf[0xffffffb8][0xfffffffe][0xffffffd9]3[0xc][0xffffffe6][0xffffffd3][0xffffff8e][0x11][0x17][0x10]C[0x1d]`i[0x19][0xffffffd5][0xffffffbc][0xfffffff1][0xffffffa4]5[0xffffffbc][0x1e]o[0xfffffff5]K[0xffffffa9][0xffffffd6][0xfffffff8][0xffffffc1]f[0xffffff9b]z[0x4][0xffffffd4][0x1a][0xffffff86][0xffffffb9]^K[0x16]s[0xffffff91][0xfffffffe][0xffffffbf][0xffffff8b]l]~)x(p,[0x11]2[0x14][0x8]E8e[0xffffff9e][0xffffffca]:X[0xffffffa6][0xffffff86][0xffffff88].[0xffffffb6]9[0xffffff9a][0xffffff88].[0xfffffff7]]G[0xffffffea][0xffffffcb][0xe][0xfffffffb][0x7f].u[0xffffff83][0xffffffbb][0xfffffff4][0xffffffb3][0x19][0xffffffda][0xffffffec][0xffffff98][0xffffffc5]Y[0xfffffffd]h8m6\4[0xffffffc1][0xffffff8a][0xffffffb7][0xffffff98]z[0xffffffd0][0xffffffd5]oF5q[0x1c][0x13][0x16][0xfffffff0][0x1d][0x1e][0x19]5-[0xffffff9d][0xffffffef][0xffffffad]c[0xb]z[0xffffffae]/m[0xffffffe6]8[0xffffffb6][0xffffff96][0xfffffff6]7X[0xffffffc9]t[0xfffffff8][0xfffffff9][0xffffffa5][0x11]K[0xfffffffb][0x15]3[0xffffffc3][0xfffffffc][0x1f]B[0xffffffdb][0xffffffd3][0xffffffab][0xffffff92]4.[0xffffff93]Z[0xffffffdf]]:[0xffffffda][0xffffffea][0xffffffdc]B[0xffffffa6][0xffffffcd][0xffffffbc][0xffffffae][0x5][0xfffffff5][0x4][0xffffffd6]8[0xffffffc0][0xffffff82][0xffffff96][0xfffffff0][0xffffffd2][0xc][0xffffffed][0xffffffe0]Y[0xffffffa8][\r]:[[0xffffffa9][0x0][0xffffffff][0x1][0xfffffff8][0x15][0xffffffb4][0xffffffee][0xffffff8e][\r][0x0][0x0]"
+18:56:17.928 [main] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient - ep-0000000000 releasing valid endpoint
+18:56:17.928 [main] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-0000000000 releasing endpoint
+18:56:17.928 [main] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-0000000000 connection http-outgoing-0 can be kept alive for 3 MINUTES
+18:56:17.930 [main] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-0000000000 connection released [route: {s}->https://raw.githubusercontent.com:443][total available: 1; route allocated: 1 of 5; total allocated: 1 of 25]
+18:56:17.930 [main] DEBUG io.github.bonigarcia.wdm.versions.VersionDetector - Detecting chrome version using online commands.properties
+18:56:17.946 [main] DEBUG io.github.bonigarcia.wdm.versions.Shell - Running command on the shell: [cmd.exe, /C, wmic, datafile, where, name="%PROGRAMFILES:\=\\%\\Google\\Chrome\\Application\\chrome.exe", get, Version, /value]
+18:56:18.295 [main] DEBUG io.github.bonigarcia.wdm.versions.Shell - Result: 
+18:56:18.296 [main] DEBUG io.github.bonigarcia.wdm.versions.Shell - Running command on the shell: [cmd.exe, /C, wmic, datafile, where, name="%PROGRAMFILES(X86):\=\\%\\Google\\Chrome\\Application\\chrome.exe", get, Version, /value]
+18:56:18.641 [main] DEBUG io.github.bonigarcia.wdm.versions.Shell - Result: Version=126.0.6478.183
+18:56:18.656 [main] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient - ex-0000000002 preparing request execution
+18:56:18.657 [main] DEBUG org.apache.hc.client5.http.protocol.RequestAddCookies - ex-0000000002 Cookie spec selected: strict
+18:56:18.658 [main] DEBUG org.apache.hc.client5.http.protocol.RequestAuthCache - ex-0000000002 Auth cache not set in the context
+18:56:18.658 [main] DEBUG org.apache.hc.client5.http.impl.classic.ProtocolExec - ex-0000000002 target auth state: UNCHALLENGED
+18:56:18.658 [main] DEBUG org.apache.hc.client5.http.impl.classic.ProtocolExec - ex-0000000002 proxy auth state: UNCHALLENGED
+18:56:18.658 [main] DEBUG org.apache.hc.client5.http.impl.classic.ConnectExec - ex-0000000002 acquiring connection with route {s}->https://chromedriver.storage.googleapis.com:443
+18:56:18.659 [main] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient - ex-0000000002 acquiring endpoint (3 MINUTES)
+18:56:18.661 [main] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ex-0000000002 endpoint lease request (3 MINUTES) [route: {s}->https://chromedriver.storage.googleapis.com:443][total available: 1; route allocated: 0 of 5; total allocated: 1 of 25]
+18:56:18.663 [main] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ex-0000000002 endpoint leased [route: {s}->https://chromedriver.storage.googleapis.com:443][total available: 1; route allocated: 1 of 5; total allocated: 2 of 25]
+18:56:18.663 [main] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ex-0000000002 acquired ep-0000000001
+18:56:18.663 [main] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient - ex-0000000002 acquired endpoint ep-0000000001
+18:56:18.663 [main] DEBUG org.apache.hc.client5.http.impl.classic.ConnectExec - ex-0000000002 opening connection {s}->https://chromedriver.storage.googleapis.com:443
+18:56:18.663 [main] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient - ep-0000000001 connecting endpoint (30 SECONDS)
+18:56:18.664 [main] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-0000000001 connecting endpoint to https://chromedriver.storage.googleapis.com:443 (30 SECONDS)
+18:56:18.966 [main] DEBUG org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator - http-outgoing-1 connecting to chromedriver.storage.googleapis.com/172.217.167.59:443
+18:56:18.966 [main] DEBUG org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory - Connecting socket to chromedriver.storage.googleapis.com/172.217.167.59:443 with timeout 30 SECONDS
+18:56:19.107 [main] DEBUG org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory - Enabled protocols: [TLSv1.3, TLSv1.2]
+18:56:19.108 [main] DEBUG org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory - Enabled cipher suites: [TLS_AES_256_GCM_SHA384, TLS_AES_128_GCM_SHA256, TLS_CHACHA20_POLY1305_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_CHACHA20_POLY1305_SHA256, TLS_DHE_DSS_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_DHE_DSS_WITH_AES_256_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_DSS_WITH_AES_256_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_GCM_SHA384, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_256_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
+18:56:19.109 [main] DEBUG org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory - Starting handshake
+18:56:19.428 [main] DEBUG org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory - Secure session established
+18:56:19.428 [main] DEBUG org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory -  negotiated protocol: TLSv1.3
+18:56:19.429 [main] DEBUG org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory -  negotiated cipher suite: TLS_AES_256_GCM_SHA384
+18:56:19.430 [main] DEBUG org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory -  peer principal: CN=*.storage.googleapis.com
+18:56:19.430 [main] DEBUG org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory -  peer alternative names: [*.storage.googleapis.com, *.googleapis.com, commondatastorage.googleapis.com, *.commondatastorage.googleapis.com, storage.googleapis.com, storage-p2.googleapis.com, *.storage-p2.googleapis.com, storage.mtls.googleapis.com, *.appspot.com.storage.googleapis.com, *.content-storage.googleapis.com, *.content-storage-p2.googleapis.com, *.content-storage-upload.googleapis.com, *.content-storage-download.googleapis.com, *.storage-upload.googleapis.com, *.storage-download.googleapis.com]
+18:56:19.431 [main] DEBUG org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory -  issuer principal: CN=WR2, O=Google Trust Services, C=US
+18:56:19.431 [main] DEBUG org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator - http-outgoing-1 connection established 192.168.194.221:55656<->172.217.167.59:443
+18:56:19.431 [main] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-0000000001 connected http-outgoing-1
+18:56:19.431 [main] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient - ep-0000000001 endpoint connected
+18:56:19.431 [main] DEBUG org.apache.hc.client5.http.impl.classic.MainClientExec - ex-0000000002 executing GET /LATEST_RELEASE_126 HTTP/1.1
+18:56:19.432 [main] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient - ep-0000000001 start execution ex-0000000002
+18:56:19.432 [main] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-0000000001 executing exchange ex-0000000002 over http-outgoing-1
+18:56:19.432 [main] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 >> GET /LATEST_RELEASE_126 HTTP/1.1
+18:56:19.435 [main] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 >> user-agent: Apache-HttpClient/5.0
+18:56:19.435 [main] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 >> accept-encoding: gzip, deflate, br
+18:56:19.436 [main] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 >> cache-control: max-age=0
+18:56:19.436 [main] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 >> connection: keep-alive
+18:56:19.437 [main] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 >> Host: chromedriver.storage.googleapis.com
+18:56:19.437 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 >> "GET /LATEST_RELEASE_126 HTTP/1.1[\r][\n]"
+18:56:19.437 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 >> "user-agent: Apache-HttpClient/5.0[\r][\n]"
+18:56:19.437 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 >> "accept-encoding: gzip, deflate, br[\r][\n]"
+18:56:19.437 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 >> "cache-control: max-age=0[\r][\n]"
+18:56:19.437 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 >> "connection: keep-alive[\r][\n]"
+18:56:19.437 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 >> "Host: chromedriver.storage.googleapis.com[\r][\n]"
+18:56:19.437 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 >> "[\r][\n]"
+18:56:19.813 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 << "HTTP/1.1 404 Not Found[\r][\n]"
+18:56:19.814 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 << "Content-Type: application/xml; charset=UTF-8[\r][\n]"
+18:56:19.815 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 << "Content-Length: 193[\r][\n]"
+18:56:19.816 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 << "X-GUploader-UploadID: ACJd0NopTbUNBd3dfneqTDYKF9gwlmek24VnsG3J4DrpHu9XU_LKWUNgsa292i7PO41PXIMJofw6PVJPiQ[\r][\n]"
+18:56:19.816 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 << "Date: Sun, 21 Jul 2024 13:26:20 GMT[\r][\n]"
+18:56:19.816 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 << "Expires: Sun, 21 Jul 2024 13:26:20 GMT[\r][\n]"
+18:56:19.816 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 << "Cache-Control: private, max-age=0[\r][\n]"
+18:56:19.816 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 << "Server: UploadServer[\r][\n]"
+18:56:19.816 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 << "Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000[\r][\n]"
+18:56:19.816 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 << "[\r][\n]"
+18:56:19.816 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 << "<?xml version='1.0' encoding='UTF-8'?><Error><Code>NoSuchKey</Code><Message>The specified key does not exist.</Message><Details>No such object: chromedriver/LATEST_RELEASE_126</Details></Error>"
+18:56:19.817 [main] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 << HTTP/1.1 404 Not Found
+18:56:19.817 [main] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 << Content-Type: application/xml; charset=UTF-8
+18:56:19.817 [main] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 << Content-Length: 193
+18:56:19.817 [main] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 << X-GUploader-UploadID: ACJd0NopTbUNBd3dfneqTDYKF9gwlmek24VnsG3J4DrpHu9XU_LKWUNgsa292i7PO41PXIMJofw6PVJPiQ
+18:56:19.817 [main] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 << Date: Sun, 21 Jul 2024 13:26:20 GMT
+18:56:19.817 [main] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 << Expires: Sun, 21 Jul 2024 13:26:20 GMT
+18:56:19.817 [main] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 << Cache-Control: private, max-age=0
+18:56:19.817 [main] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 << Server: UploadServer
+18:56:19.817 [main] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 << Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+18:56:19.818 [main] DEBUG org.apache.hc.client5.http.impl.classic.MainClientExec - ex-0000000002 connection can be kept alive for 3 MINUTES
+18:56:19.819 [main] ERROR io.github.bonigarcia.wdm.online.HttpClient - Error HTTP 404 executing https://chromedriver.storage.googleapis.com/LATEST_RELEASE_126
+18:56:19.822 [main] WARN io.github.bonigarcia.wdm.versions.VersionDetector - Exception reading https://chromedriver.storage.googleapis.com/LATEST_RELEASE_126 to get latest version of chromedriver (Error HTTP 404 executing https://chromedriver.storage.googleapis.com/LATEST_RELEASE_126)
+18:56:19.823 [main] DEBUG io.github.bonigarcia.wdm.versions.VersionDetector - Getting driver version for chrome126 from online versions.properties
+18:56:19.824 [main] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient - ex-0000000003 preparing request execution
+18:56:19.825 [main] DEBUG org.apache.hc.client5.http.protocol.RequestAddCookies - ex-0000000003 Cookie spec selected: strict
+18:56:19.825 [main] DEBUG org.apache.hc.client5.http.protocol.RequestAuthCache - ex-0000000003 Auth cache not set in the context
+18:56:19.825 [main] DEBUG org.apache.hc.client5.http.impl.classic.ProtocolExec - ex-0000000003 target auth state: UNCHALLENGED
+18:56:19.825 [main] DEBUG org.apache.hc.client5.http.impl.classic.ProtocolExec - ex-0000000003 proxy auth state: UNCHALLENGED
+18:56:19.825 [main] DEBUG org.apache.hc.client5.http.impl.classic.ConnectExec - ex-0000000003 acquiring connection with route {s}->https://raw.githubusercontent.com:443
+18:56:19.825 [main] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient - ex-0000000003 acquiring endpoint (3 MINUTES)
+18:56:19.825 [main] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ex-0000000003 endpoint lease request (3 MINUTES) [route: {s}->https://raw.githubusercontent.com:443][total available: 1; route allocated: 1 of 5; total allocated: 2 of 25]
+18:56:19.825 [main] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ex-0000000003 endpoint leased [route: {s}->https://raw.githubusercontent.com:443][total available: 0; route allocated: 1 of 5; total allocated: 2 of 25]
+18:56:19.826 [main] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ex-0000000003 acquired ep-0000000002
+18:56:19.826 [main] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient - ex-0000000003 acquired endpoint ep-0000000002
+18:56:19.826 [main] DEBUG org.apache.hc.client5.http.impl.classic.MainClientExec - ex-0000000003 executing GET /bonigarcia/webdrivermanager/master/src/main/resources/versions.properties HTTP/1.1
+18:56:19.826 [main] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient - ep-0000000002 start execution ex-0000000003
+18:56:19.826 [main] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-0000000002 executing exchange ex-0000000003 over http-outgoing-0
+18:56:19.826 [main] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 >> GET /bonigarcia/webdrivermanager/master/src/main/resources/versions.properties HTTP/1.1
+18:56:19.826 [main] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 >> user-agent: Apache-HttpClient/5.0
+18:56:19.826 [main] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 >> accept-encoding: gzip, deflate, br
+18:56:19.826 [main] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 >> cache-control: max-age=0
+18:56:19.826 [main] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 >> connection: keep-alive
+18:56:19.826 [main] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 >> Host: raw.githubusercontent.com
+18:56:19.827 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 >> "GET /bonigarcia/webdrivermanager/master/src/main/resources/versions.properties HTTP/1.1[\r][\n]"
+18:56:19.827 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 >> "user-agent: Apache-HttpClient/5.0[\r][\n]"
+18:56:19.827 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 >> "accept-encoding: gzip, deflate, br[\r][\n]"
+18:56:19.827 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 >> "cache-control: max-age=0[\r][\n]"
+18:56:19.827 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 >> "connection: keep-alive[\r][\n]"
+18:56:19.827 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 >> "Host: raw.githubusercontent.com[\r][\n]"
+18:56:19.827 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 >> "[\r][\n]"
+18:56:20.219 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+18:56:20.219 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "Connection: keep-alive[\r][\n]"
+18:56:20.219 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "Content-Length: 2026[\r][\n]"
+18:56:20.220 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "Cache-Control: max-age=300[\r][\n]"
+18:56:20.220 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox[\r][\n]"
+18:56:20.220 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "Content-Type: text/plain; charset=utf-8[\r][\n]"
+18:56:20.220 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "ETag: W/"158b12be0d90e618af614dffeb94f06b915e7bb96fe9c2a07aa822ccf33242a6"[\r][\n]"
+18:56:20.220 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "Strict-Transport-Security: max-age=31536000[\r][\n]"
+18:56:20.220 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "X-Content-Type-Options: nosniff[\r][\n]"
+18:56:20.220 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "X-Frame-Options: deny[\r][\n]"
+18:56:20.220 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "X-XSS-Protection: 1; mode=block[\r][\n]"
+18:56:20.220 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "X-GitHub-Request-Id: 657A:1C0615:1131AF:13EA36:66957D71[\r][\n]"
+18:56:20.220 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "Content-Encoding: gzip[\r][\n]"
+18:56:20.221 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "Accept-Ranges: bytes[\r][\n]"
+18:56:20.222 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "Date: Sun, 21 Jul 2024 13:26:20 GMT[\r][\n]"
+18:56:20.222 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "Via: 1.1 varnish[\r][\n]"
+18:56:20.222 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "X-Served-By: cache-bom4725-BOM[\r][\n]"
+18:56:20.222 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "X-Cache: HIT[\r][\n]"
+18:56:20.222 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "X-Cache-Hits: 0[\r][\n]"
+18:56:20.222 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "X-Timer: S1721568381.718445,VS0,VE1[\r][\n]"
+18:56:20.222 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "Vary: Authorization,Accept-Encoding,Origin[\r][\n]"
+18:56:20.222 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "Access-Control-Allow-Origin: *[\r][\n]"
+18:56:20.222 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "Cross-Origin-Resource-Policy: cross-origin[\r][\n]"
+18:56:20.222 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "X-Fastly-Request-ID: 1ad701dfb9cbd04b60bab3abab614090e44de496[\r][\n]"
+18:56:20.223 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "Expires: Sun, 21 Jul 2024 13:31:20 GMT[\r][\n]"
+18:56:20.223 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "Source-Age: 84[\r][\n]"
+18:56:20.223 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "[\r][\n]"
+18:56:20.224 [main] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << HTTP/1.1 200 OK
+18:56:20.225 [main] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << Connection: keep-alive
+18:56:20.225 [main] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << Content-Length: 2026
+18:56:20.225 [main] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << Cache-Control: max-age=300
+18:56:20.225 [main] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+18:56:20.225 [main] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << Content-Type: text/plain; charset=utf-8
+18:56:20.225 [main] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << ETag: W/"158b12be0d90e618af614dffeb94f06b915e7bb96fe9c2a07aa822ccf33242a6"
+18:56:20.225 [main] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << Strict-Transport-Security: max-age=31536000
+18:56:20.225 [main] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << X-Content-Type-Options: nosniff
+18:56:20.225 [main] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << X-Frame-Options: deny
+18:56:20.225 [main] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << X-XSS-Protection: 1; mode=block
+18:56:20.225 [main] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << X-GitHub-Request-Id: 657A:1C0615:1131AF:13EA36:66957D71
+18:56:20.225 [main] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << Content-Encoding: gzip
+18:56:20.225 [main] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << Accept-Ranges: bytes
+18:56:20.225 [main] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << Date: Sun, 21 Jul 2024 13:26:20 GMT
+18:56:20.226 [main] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << Via: 1.1 varnish
+18:56:20.227 [main] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << X-Served-By: cache-bom4725-BOM
+18:56:20.228 [main] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << X-Cache: HIT
+18:56:20.228 [main] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << X-Cache-Hits: 0
+18:56:20.228 [main] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << X-Timer: S1721568381.718445,VS0,VE1
+18:56:20.229 [main] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << Vary: Authorization,Accept-Encoding,Origin
+18:56:20.229 [main] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << Access-Control-Allow-Origin: *
+18:56:20.229 [main] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << Cross-Origin-Resource-Policy: cross-origin
+18:56:20.229 [main] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << X-Fastly-Request-ID: 1ad701dfb9cbd04b60bab3abab614090e44de496
+18:56:20.229 [main] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << Expires: Sun, 21 Jul 2024 13:31:20 GMT
+18:56:20.229 [main] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << Source-Age: 84
+18:56:20.229 [main] DEBUG org.apache.hc.client5.http.impl.classic.MainClientExec - ex-0000000003 connection can be kept alive for 3 MINUTES
+18:56:20.230 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "[0x1f][0xffffff8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3][0xffffff9d][0xffffff97]M[0xffffff8f][0xfffffff3][0xffffffb6][0x11][0xffffffc7][0xffffffef][0xfffffffb])[0x4][0xffffffe4][0xffffff92][0xffffffa0][0xffffffb1][0xffffffcc][0xfffffff7][0xffffff97][0x5]th[0xffffffd3]6[0xffffffcd]!)[0xffffff9a][0x4][0xffffffc8]Ykk[0xffffffbd][0xffffffca]cK[0xffffff86][0xffffffa4][0xffffffcd][0xffffffa6][0xfffffff9][0xfffffff4][0xffffff99]!9[0x12]M[0x5]E[0xffffffd0][0xffffffc3]b[0xffffffcd][0xffffff9f]e[0xffffffce][0xb]G[0xffffffc3][0xffffffff]|V[0xfffffffd][0xfffffff8][0xffffffd6][0xffffffcf][0xffffffd5]k[0x7f][0xffffffed][0xffffffaa][0xffffffd3]8,m?[0xffffffcc][0xffffffd5][0xfffffff2][0xffffffd6]U[0xffffff9f][0xffffff86][0xfffffff1]c[0xffffffa8][0xffffffce]S[0xffffffff]K7U[0xfffffff0]7[0xfffffff7]#|s[0x1a]o[0xfffffff7]v[0xffffffe9]_[0xffffffe0][0xffffffe9][0xffffff8f]~y[0xb]O[0xffffff9e][0xffffffc6]i[0xffffffea][0xffffffe6][0xfffffffb]8[0xffffff9c][0xfffffffb][0xffffffe1]R[0xffffffbd]L[0xffffffe3][0xffffffc7][0xffffffbc][0xfffffffd][0xffffffe4][0xffffffe9][0xffffffe9][0xffffffb3][0xffffffea][0xffffffa7][0xffffffbf]~[0xffffffff][0xffffffdd]7[0xffffffdf]}[0xfffffffd][0x1c]M[0xfffffff5][0xffffffc3][0xffffffeb]X[0xfffffff5]q[0xffffffab]k[0xffffffb7]t[0xffffffd7][0xffffffff]V[0xffffffe7][0xffffffee]>u[0xffffffa7]v[0xffffffe9][0xffffffce]U;W[0xffffffe3]k[0xfffffff5]S[0xfffffff7][0xfffffff2][0xfffffff7]`[0xfffffff9][0xffffffdb]vh/[0xffffffb0][0xffffff9b][0xffffffae]m[0xffffffcd][0xffffffea][0xffffffea][0xffffff9b]a^[0xffffffba][0xfffffff6][0xfffffffc][0xffffffe5][0xfffffffe][0xffffff81][0xfffffff7][0xffffffb9][0xffffff83]_[0xe][0xffffffd7]~[0xffffffe8][0xffffffaa][[0xffffffb7][0xffffffb4][0xffffffe7]vi[0xffffffab]e[0xffffffac][0xffffffce][0xfffffffd]|[0x1a]1[0x4][0xfffffff4][0xfffffff4]>[0xffffff8d]w[0xfffffff8]X[0x6][0xfffffff5]:N[0xffffffd5][0x5][0xffffffd0]P[0xffffffdd][0xffffffda][0xffffff9f][0xffffffe1]s[0x11][0xffffffc2][0xfffffffc]e5[0xffffffb4]7[0xfffffff0][0xfffffff3][0x19]b9T_[0xffffffbd]M[0xffffffe3][0xffffffad]{[0xffffffae][0xffffffbe]z[0xfffffffd][0xffffffb1][0xffffffea][0xffffff86][0xfffffff3]}[0xffffffec][0xffffff87]e[0xffffffae]>[0x7f][[0xffffff96][0xfffffffb][0xfffffffc]|<^[0xffffffc6][0xfffffff1]r[0xffffffed]N[0xffffffe1][0xffffffa1]k[0xfffffffb]2[0xffffffd7][0x17][0xffffffc8][0xffffffd3][0xfffffffb]K[0xffffffdd][0xffffff8f][0xffffffc7][0x8][0xf]`[0xffffffee][0xffffffb0]t[0xfffffff3][0x2][0xffffffd9]:[0xffffff86],[0x1f][0xffffffe0]7[0xffffffe7][0x3]Y;`b[0xf]g[0xffffffe0][0xffffffd7][0xffffffb1]=[0xffffffcf][0xfffffff5][0xffffffcf][0xfffffff3]8T[0xffffffed]p[0xffffffae][0xfffffffe]?[0xb][0xffffffd7]v^[0xe][0x7f][0xffffffd2][0xffffffcc][0x17]![0xffffffc0][0x7f][0xfffffff6]S[0xfffffff7]:[0xfffffffe][0xfffffffa][0xffffffbc][0x1a][0xffffff9c][0xffffffda][0xffffff8f]d[0x3][0xffffffb2]<a[0xffffff95]t[0xffffffc3]R[0xffffffc3][0xfffffff9][0x1d][0x7f][0xffffffe8][0xffffffae][0xffffffdd][0xffffffd0][0xffffffbf][0xffffffdf][0xfffffffe][0xfffffff5][0xffffff9f][0xffffffe3][0xffffff9c]>[0x1e][0xffffff97][0xffffffe9]}[0xfffffff8]t[0xffffff84]oo[0xffffffe3]p[0xffffffbc]t[0xffffffa7]Oc[0xffffffcc]w[0xfffffffe][0xfffffff9]0[0xffffffbf][0xffffffdf][0xffffffef][0xffffffe3][0xffffffb4][0x4][0xffffffab][0xffffffc1][0xffffffe8]?[0xffffffce][0xffffff97]n[0xffffffb3]x[0xffffff9b];X[0xffffffc7]g[0xffffffeb][0xfffffff6][0xffffffb7][0xfffffff7][0xffffffa9][0xffffffc3]u=t[0xffffffcb]1<[0xfffffffd]o8[0xffffffc6][0xfffffff6][0xffffffcf]8[0xfffffff8]2[0xe][0xfffffffd][0xffffffa5][0xffffff9d]N}{[0xfffffffc][0xffffffe8]^[0xffffffe2][0xffffff86][0xffffffb7]X2[0xffffffc7][0x1b]d[0x6][0xfffffffe][0xffffff9d][0xffffffc7][0xffffffd3]|[0xffffffbc][0xfffffff5][0xffffffd3]4NG,[0xffffff8f]6[0xffffff95][0xffffffc7][0xffffffe7][0xffffffb1][0x18]r[0xffffff94]rW5[0xffffffa9]P[0xffffff82][0x1b]+[0xfffffffd]K[0xffffffc5][0xffffffd5][0x17]X[0xffffffef][0x7f][0xffffff8b][0xfffffff5][0xfffffff3]\}[0x1d]N*UL8[0xffffffc3][0xfffffff0][0x11][0xffffffb2][0x4]1[0xffffffc4][0xfffffffa]}[0xffffffae][0xffffffe2][0xffffff99]E[0xb][0xfffffff0][0xffffffe3][0x1f][0xffffffc6][0xfffffff7][0xffffffe9][0xffffff94]R[0x1][0xffffffa1][0xffffffe5][0xffffffdf][0xffffffd6][0xffffffa7][0xfffffff4][0xffffffeb]z[0xffffff9c].[0xffffffc7][0xfffffff5][0xffffffe8][0xffffff9e][0xffffffe2]3[0xffffff9c][0xffffffab][0x6][0xfffffffe][0xffffffe0]5[0xffffffd1]V[0xffffffea][0xffffffda][0xffffffb3][0xffffff95]K[0xffffffe0][0x12][0xffffffb9][0xffffffb1][0xffffffa2]6r[0xffffffe5][0x2][0xffffffb8][0x8][0xffffff9c][0xffffffeb]Z[0xfffffff9][0xffffff95]s[0xffffffe0][0x1c][0xffffffb9]6[0xffffffb2]6j[0xffffffe5][0xc]8C[0xffffffae][0x1c][0xffffffaf][0xffffffad]%[0xffffffce]|[0x3][0x7f][0xffffff81][0xffffff83]y[0xffffffbb]>[0xffffffcf][0x1c]p[0xffffff87]\j_[[0xffffffbe]r[0xb][0xffffffdc][0x6][0xffffffce]Tm[0xffffffc4][0xffffffca][\r]p[0xffffff83]\(_[0xffffff9b][0xffffffed]y[\r]\#[0xffffffe7]^[0xffffffc3][0xffffff97]+[0xffffff87]xY[0xffffff88][0x17][0xffffffc3][0xffffffb0][0xffffffab][0xffffffff][0xc][0xffffffe2]e!^fX[0xffffffcd][0xffffffe5][0xffffffe6][0x10][0x4][0xffffffcc]B[0xffffffc0][0xc][0xfffffff6][0xffffffcb][0xc]@[0xffffffc0][0xc][0x3]V^[0xfffffff3]Zm[0x1c][0x2]f[0x18][0xffffffb0]r[0xffffffde][0xffffffd4][0xffffff86][0x12][0xffffffea]}[0xffffffe3]}[0xffffffa0]J[0xffffff81]m[0xffffffa2][0xffffffae][0xfffffff1][0x18][0xffffffac][0xffffffb2][0xffffffda][0xffffffd5]`[0xffffff86][0xffffffb0]m<[0xffffffc6][0xffffffaa][0xffffff8c][0x17][[0xe][0xffffffbc]i[0xffffffbc][0x9][0xffffffd4][0xffffffa8]Zi[0xffffffa2][0xffffffba][0xfffffff1]:P[0xffffffe9]jC[0xfffffff1]x[0xffffffd5]x[0x15]($[0x7][0xe][0xffffff92][0xffffffb0]l<[0x6][0xffffffa9][0xffffffb4][0xffffffb5][0xffffffdb][0xffffffa1]z[0xffffffd1]x[0x11]([0x1c])d[0xffffff99]0o|[0x8]PA[0x5]@[0xffffffac][0xffffff84]Y[0xffffffe3]C|J[0xffffffb2]ZP[0xffffff9e][0xffffff9c]o\[0xffffff88]O[0xffffffc2]?A;;[0xffffffd7][0xffffffb8][0x10][0xffffff9f][0x14][0xffffffaa][0xfffffff6][0xffffff86][0xffffffa8]m\[0x8]O8V;G[0xffffffd4]4.[0xffffff84]'[0x14][0xffffffec]K[0xffffffa9]p[0xffffffba]q!<[0xffffffee]d[0xffffffed][0xffffffc8]5[0xffffffa7][0x1a][0x17][0xffffffc2][0xffffffe3][0xffffffca][0xffffffd6][0xffffff92]r[0xffffffec]d[0xffffffe3]Btx[0xffffff92][0xffffff92]R[0xffffffe1]x[0xffffffe3]B[0x18][0xc]2[0xffffffcf][0xffffffe5]j[0xffffff8e]5[0xe][0xffffffc3][0xffffff90][0x1e]|[0xffffff81][0x12]J[0xffffffd8][0xfffffffa][0xffffffc6][0xfffffffa][0xffffff80][0xffffff95][0xffffffae][0xffffffe5]J]c][0xffffffa0]P;PW[0xffffff84]mc1[0x10][0xffffffe9][0xc][0xffffffbc][0xb][0xffffffe4][0xffffff86]5[0xffffff8d]5[0xffffff81]B[0xffffff81]s[0xffffffb1][0xffffffee][0xffffffa1][0x1b][0xffffff8b][0xffffff91]Hk[0xffffffa1][0xffffffc0][0xffffffb6][0xffffffa7]UcU[0xffffffc0][0x2][0xffffffea][0xffffff97][0xffffffa0]l,F"[\r][0x4]d[0xffffffc8]e+[0x1a][0x1]'J+[0xfffffffe][0xffffffb0]b[0xffffffb8]"[0xffffffc7][0xffffff8c][0xffffffc7][0x15][0xffffff9d][0xffffff8d]q[0xffffffb8][0xffffffa2][0xffffff8c][0x1a][0xffffff8b]+:McpE[0xffffffce][0x18][\r][0xffffffab]5EF[0xffffffe1][0xffffff8a]rn$[0xffffffae][0xffffffc8][0xffffff9e]A_[0xffffffe4]j[0xf]}Y[0xffffffdf][0x19][0xffffff83][0xffffffbe]H[0xfffffff9][0xffffffd0][0xffffffd5][0xffffffbe][0x1d][0x7f][0xffffffeb][0xffffffaf][0xffffffd7][0xffffff96][0xffffffee][0xffffff89][0xffffffac][0xffffff95]e[0x1d][0xffffffbe][0xffffffe8]d[0xffffffe1][0xffffffde][0xffffff8a][0xffffffd7][0x14][0xffffffb6][0xffffffe5][[0xffffffdc][0xffffffe2][0xffffffe1]z[0xffffff98][0xffffffe0][0x2]i[0xffffffe1][0x16][0x7f]z[0xffffff8d][0xfffffffb]r![0x1a]H[0x1b]$t#|G[0x18][0x12][0xffffff99][0x11][0xffffffee]w[0xffffffc4][0xffffffed][0xffffff88][0xffffffdd][0x11][0xffffffb3]#zG[0xffffffd4][0xffffff8e][0xffffffc8][0x1d][0x11];[0xffffffc2]w$[0xfffffff8],j[0xffffffb1][0x12][0xffffffe6]#[0xffffffd9][0xffffff9e]anG[0xffffffec][0xffffff8e][0xffffff98][0x1d][0xffffffd1];[0x12]|[0xffffffe6]9[0xffffff91];"v[0xffffff84][0xffffffef][0x8]+[0xffffff88][0xfffffff7]%p%[0xffffffb0]%0%[0xffffffd0]%([0xffffffbd][0xfffffff5][0xffffffa5][0xffffffb3][0xffffffbe][0xfffffff4][0xffffffd5][0xffffff97][0xffffffae]z[0xfffffff4][0x14][0xffffffde][0xffffffbf][0xc][0xffffffd4][0xffffffa0][\n]"
+18:56:20.231 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "[0xffffffdf][0x7f][0xffffff8d][0xffffff98][0x13]v[0xffffffbe]x[0xffffffce][0xffffffb9][0x12][0xffffffd8][0x12][0xffffff98][0x12][0xffffffe8][0x12][0xffffffa8][0x12]`[0x0][0xffffffc2]e@[0xffffff94][0x0][0x3][0x10]6[0x3][0xffffffac][0x0][0xffffffd6][0xffffff97] xj2`K`J[0xffffffa0]K[0xffffffa0]J K J[0xffffffc0]K[0xffffffc0][\n]"
+18:56:20.231 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "`|[0x9][0xffffff82][0xffffffa7]:[0x3][0xffffffc1][0xffffffd3][0xffffffec][\r]6[0xffffffa6][0x4][0xffffffba][0x4][0xffffffc1][0xffffffd3][0xffffffec][0x5]2[0xffffffb2][0x4][0xffffffc1][0xffffffd3][0xffffffac][0xffffffec]M[0xfffffff0]4+[\n]"
+18:56:20.231 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "[0xffffffc3][\n]"
+18:56:20.231 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "[0xffffffa0]}[0x9]\[0x9]l[0x9][0xffffff82][0xffffffa7],[0x3][0xffffff9a]@[0xffffffde][0x1d][0xffffffa3]&[0xffffffdc]zb[0xffffffa6][0x1f][0xffffffff]wO[0xc][0xf][0xffffffce][0xffffffe3][0xffffffeb][0xfffffff2][0xffffffd1]N]\[0xffffff91][0xffffffde]+;d[0xfffffff8]2[0xffffffe8](t[0x10][0xffffff94][0xffffff8c][0xffffffb1][0xffffffe1][0x1a]J[0x1c]t[0x14][0xffffffba][0x5][0xffffff8a][0x5]t[0xffffff8a]`+[0x7][0x1d][0xffffffc5]}[0xffffffe0]p!r[0xffffffb8][0xffffffef][0x13]G[0xffffffdd][0x18]t[0xffffff9a][0x7]E[0xffffffe1]<a[0xffffff94][0xffffff8d]A[0xffffffa6]y[0xffffff90]#\[\n]"
+18:56:20.231 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "[0xffffffe2]([0x1b][0xffffff83]Ls[0xffffffb0][0xffffff8d][0xffffffb7][0xffffff84]Q5[0x6][0xffffff95]f[0xffffffe1][0xffffff8d][0xffffffe3] u[0x12]g[0xffffffb9]*[0xffffff85][0xffffffe6][0x17]9[0xfffffff4][0xffffff8f]L[0xffffff94]r[0xffffff91][0xffffffb6][0xffffff81].[0xffffff92]iRG[0xffffffd4]>(R[0xffffff9d][0xffffffa8][0xffffffc9][0xfffffff5]([0xffffffa7]8[0xffffffbd][0xffffffce][0xffffffe5](d"a[0xffffff95][0xffffffab]Q[0xffffff9f][0xffffffa2][0xfffffff4]"
+18:56:20.232 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "2[0xffffffd7][0xffffffa2] `"[0x15][0xffffffb9][0x12][0xffffff85][0xffffffa4]%[0xffffffcc]s![0xffffff8a][0x1a]/b[0xffffff96][0xffffffeb]P[0xffffff97][0x2]w>W[0xffffffa1][0xffffffc6]$[0xffffffea][\n]"
+18:56:20.232 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "[0x9][0x1a][0xffffffa9][0xffffffcd][0x5][0xffffffa8]I[0x7][0xffffffe3]L.?[0xffffffd7][0x14]A[0xffffffd3]y[0xffffff90][0xffffff9f][0x11][0xffffffaa]L}[0xffffffba][0xffffffe4][0x18]4[0xffffff9f][0x7][0xffffffed][0x19][0xffffffa1]x[0xffffff94][0xffffff9e][0x11][0xfffffff2]Lyj[0xffffffb2][0xffffffcf]2[0xffffffe1]I[0xffffffae]B3z[0xffffff90][0xffffff9d][0x11][0xffffffba]BuFj3[0xffffffd1]i[0x9][0xffffff9a]Lr[0xffffffba]d[0x1e][0xffffffba][0xffffffd3][0xffffffa6]8[0xffffffc9]{[0xffffffe8]P[0xffffff9b][0xffffffe0][0xffffff84][0x4]'*3[0xffffffc1]ihS[0xffffff91][0xffffffe9]M[0xffffff97][0xe][0x1c][0xffffffda][0xffffffd5]&7[0xffffffd7][0xffffffc3][0xffffff82][0xffffff9e][0xffffffb5][0xffffffc9]M[0xffffffaa]u[0xffffffe8][[0xffffff9b][0xffffffda][0xffffffa4][0xffffff8a][0xffffff86][0xffffffde][0xffffff95][0xffffff89]M[0xffffff9e]B[0xffffff85][0x6][0xffffff96]k[0xffffffcd]d[0xb][0xffffffba][0xffffffd8]&5-[0xffffffed][0xffffffaa]3[0xffffffa5]I[0xffffffa5][0xc][0xffffffdd]l[0xffffffd3][0xffffff99]kqBK[0xffffffcb]t&[0xffffffbd]j[0xffffffd0][0xffffffd7]2[0xffffff99][0xffffffb9][0xffffffda]J[0xfffffff2]0,[0xffffffb4][0xffffffcf][0x17]I[0x1c][0xffffffc6]E[0xffffffd2][0xffffff86]q[0xffffff91][0xffffffa4]a\$e[0x18][0x17]I[0x18][0xffffffc6]E[0xffffffd2][0xffffff85]q[0xffffff91]da\[0xfffffff0][0xffffffa8][0x3][0xffffffe3][0xffffff82]e[0xb][0xffffff85][0x1e][0xffffff90][0xffffffc7][\n]"
+18:56:20.233 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "=[0xffffff90][0xffffffc9][0xffffff8e]B[0xf]DJ[0xffffff86]2q[0xfffffff1] $[0xfffffffb][0xffffffd3]4b[0xffffffc7][0xb][0xffffffd3][0x7f][0xffffffd6]3[0xfffffff3][0xfffffff1][0xffffffff][0xf][0xffffff9a][0xffffffe6][0xffffffb9][0xfffffffb][0xffffffa5][0xffffffbb][0xffffffe2][0xffffffae][0xfffffff5][0xffffff8d]v[0x8][0x1d][0xffffffb4][0x1b][0xe][0xffffffef]8[0xffffffca]'v[0xffffffc0]M[0xffffff8e][0xffffffcb]8^[0xffffffe7]m[0xfffffff8]?>![0xffffffdd]fe[0xffffffee][0xffffffe0]&[0xffffffe1].Q[0xffffff9a][0xffffff94][0xffffffb9][0x5]![0xf][0xffffff99][0xffffff8c][0xffffff94][0xffffffe6]dnE([0xffffffe4]HiJ[0xffffffe6][0xffffffc6]p[0xffffff9c]b#[0xffffffa5][0x19][0xffffff99]k[0xffffffa8][0xf][0xffffffc8]^[0xffffffa0][0xffffffeb][0xffffff84][0xffffffcc]54Z[0xffffff9b][0xffffffac][0xffffffad][0xfffffff3]1W[0x6][0xfffffff6]5[0xffffff89][0xffffffd2]t[0xc][\r][0x1d][0xffffffef][0xfffffffc][0x8]i4[0xffffffe6][0xffffffd2][0xffffffe2][\r][0xffffff9b]([\r][0xffffffc6]0[0xffffffe3]J[0xffffffe8]`[0xffffff89][0xffffffd2]X[0xffffffcc][0x5][0xffffffbc][0xffffffa9][0xffffff96]v[0xffffffa0][0xffffffa1][0x18][0xffffffa6][0x18][0xffffffb5][0x6][0xffffffb1]N[0xffffffc4]p[0x1b]h[0xffffff9c]2"[0xffffffa5]y[0x18][0xffffffae][0x17][0xffffffb6][0xffffffed]K[0xffffffd3]0\[0x16][0x1a]g2[0xffffffa4]4[0xb]C[0xffffffeb][0xffffffc7]F[0x11]Y[0xffffff9a][0xffffff84]9F[0xffffff97][0x12]Cc0[0xffffff84]&V[0xffffff96][0xffffff86]`[0xffffff88]A[0xffffffad],[0xffffff8d][0xffffffc0][0xffffffe0][0xffffffd5]j[0xffffff99][0x6]`[0xf]=F[0xfffffff2][0xffffff88][0xffffffd2][0xfffffff0][0xffffffeb]![0xfffffff5]2=[0xffffff95]&_[0xffffffcf]6[0x3]i[0xffffffea]u[0xffffffd8][0xffffffe9][0xffffffd2][0xf][0xffffffd3][0xffffffc4][0xffffffeb] [0xffffffb0]Hh[0xffffffda][0xffffffc5][0x13][0xffffff8f][0x7]C[0xffffff93][0xffffffae][0xffffff85][0xffffffdc][0xffffffa6][0xffffff9f][0xffffffd1][0xffffff98]k[0xffffff8c]OGB#[0xffffffae][0xffffff81][0xffffff92]01[0x17]4[0xffffffdf]jLpz*[\r][0xffffffb7]:[0x8][0xffffff9a]@h[0xffffffb0][0xffffff85][0xffffffd6][0xffffffa0][0xffffff93]=[0xffffffe8]^[0xffffffb1]{z[0xfffffff2][0xffffff89][0xffffffe6]\[0xffffffb8]g[0xffffffd3]Q[0xffffffad]3.D[0xc]u[0x17][0xffffffd8]:[0xffffffe0]b[0xffffffcd]F[0xffffff92][0xffffff86][a[0xffffffa9]th[0xffffffae][0x15]r%i[0xffffffa6][0xffffffc5][0xffffffb6][0xffffff98]H[0x1a]g[0xffffffb9]D[0xffffffb9][0x10][0xffffff90]R[0xffffffcd]}[0xffffffea][0xe][0xfffffffd]0/[0xffffffed][0xfffffff5][0xffffffda][0xffffff9d]#[0x14][0xffffff8d][0xffffffc1][0xffffff9b]][0xffffffc6]:Q[0xffffffbc][0xffffff81][0x16]f[0xffffff84][0xffffff8f][0xffffffe1]+[0xffffffd6]@[0xffffff9f][0xffffff84][0xffffffdb].[0xffffff9e][0xffffff87]t[\r][0xffffffbc]XJ[0xfffffffa][0xffffffb8][0x14][0xffffffd8]t[0xffffffe0][0xffffffa4]][0xffffffac][0x11][0xffffff98][0xffffffdb][0xfffffff0][0xffffffca][0xffffff86]~[0xfffffffd][0xfffffff4];2[0x18][0xfffffffe][0xffffff94][0xffffff82][0x16][0x0][0x0]"
+18:56:20.234 [main] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient - ep-0000000002 releasing valid endpoint
+18:56:20.238 [main] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-0000000002 releasing endpoint
+18:56:20.239 [main] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-0000000002 connection http-outgoing-0 can be kept alive for 3 MINUTES
+18:56:20.239 [main] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-0000000002 connection released [route: {s}->https://raw.githubusercontent.com:443][total available: 1; route allocated: 1 of 5; total allocated: 2 of 25]
+18:56:20.239 [main] DEBUG io.github.bonigarcia.wdm.versions.VersionDetector - Driver for chrome126 not found in online properties (using local versions.properties)
+18:56:20.241 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager - The driver version for CHROME 126 is unknown ... trying with latest
+18:56:20.248 [main] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient - ex-0000000004 preparing request execution
+18:56:20.249 [main] DEBUG org.apache.hc.client5.http.protocol.RequestAddCookies - ex-0000000004 Cookie spec selected: strict
+18:56:20.249 [main] DEBUG org.apache.hc.client5.http.protocol.RequestAuthCache - ex-0000000004 Auth cache not set in the context
+18:56:20.249 [main] DEBUG org.apache.hc.client5.http.impl.classic.ProtocolExec - ex-0000000004 target auth state: UNCHALLENGED
+18:56:20.249 [main] DEBUG org.apache.hc.client5.http.impl.classic.ProtocolExec - ex-0000000004 proxy auth state: UNCHALLENGED
+18:56:20.249 [main] DEBUG org.apache.hc.client5.http.impl.classic.ConnectExec - ex-0000000004 acquiring connection with route {s}->https://chromedriver.storage.googleapis.com:443
+18:56:20.249 [main] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient - ex-0000000004 acquiring endpoint (3 MINUTES)
+18:56:20.250 [main] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ex-0000000004 endpoint lease request (3 MINUTES) [route: {s}->https://chromedriver.storage.googleapis.com:443][total available: 1; route allocated: 1 of 5; total allocated: 2 of 25]
+18:56:20.251 [main] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ex-0000000004 endpoint leased [route: {s}->https://chromedriver.storage.googleapis.com:443][total available: 1; route allocated: 2 of 5; total allocated: 3 of 25]
+18:56:20.252 [main] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ex-0000000004 acquired ep-0000000003
+18:56:20.252 [main] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient - ex-0000000004 acquired endpoint ep-0000000003
+18:56:20.252 [main] DEBUG org.apache.hc.client5.http.impl.classic.ConnectExec - ex-0000000004 opening connection {s}->https://chromedriver.storage.googleapis.com:443
+18:56:20.253 [main] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient - ep-0000000003 connecting endpoint (30 SECONDS)
+18:56:20.253 [main] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-0000000003 connecting endpoint to https://chromedriver.storage.googleapis.com:443 (30 SECONDS)
+18:56:20.255 [main] DEBUG org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator - http-outgoing-2 connecting to chromedriver.storage.googleapis.com/172.217.167.59:443
+18:56:20.256 [main] DEBUG org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory - Connecting socket to chromedriver.storage.googleapis.com/172.217.167.59:443 with timeout 30 SECONDS
+18:56:20.491 [main] DEBUG org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory - Enabled protocols: [TLSv1.3, TLSv1.2]
+18:56:20.491 [main] DEBUG org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory - Enabled cipher suites: [TLS_AES_256_GCM_SHA384, TLS_AES_128_GCM_SHA256, TLS_CHACHA20_POLY1305_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_CHACHA20_POLY1305_SHA256, TLS_DHE_DSS_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_DHE_DSS_WITH_AES_256_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_DSS_WITH_AES_256_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_GCM_SHA384, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_256_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
+18:56:20.491 [main] DEBUG org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory - Starting handshake
+18:56:20.749 [main] DEBUG org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory - Secure session established
+18:56:20.749 [main] DEBUG org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory -  negotiated protocol: TLSv1.3
+18:56:20.750 [main] DEBUG org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory -  negotiated cipher suite: TLS_AES_256_GCM_SHA384
+18:56:20.750 [main] DEBUG org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory -  peer principal: CN=*.storage.googleapis.com
+18:56:20.750 [main] DEBUG org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory -  peer alternative names: [*.storage.googleapis.com, *.googleapis.com, commondatastorage.googleapis.com, *.commondatastorage.googleapis.com, storage.googleapis.com, storage-p2.googleapis.com, *.storage-p2.googleapis.com, storage.mtls.googleapis.com, *.appspot.com.storage.googleapis.com, *.content-storage.googleapis.com, *.content-storage-p2.googleapis.com, *.content-storage-upload.googleapis.com, *.content-storage-download.googleapis.com, *.storage-upload.googleapis.com, *.storage-download.googleapis.com]
+18:56:20.750 [main] DEBUG org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory -  issuer principal: CN=WR2, O=Google Trust Services, C=US
+18:56:20.750 [main] DEBUG org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator - http-outgoing-2 connection established 192.168.194.221:55657<->172.217.167.59:443
+18:56:20.750 [main] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-0000000003 connected http-outgoing-2
+18:56:20.750 [main] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient - ep-0000000003 endpoint connected
+18:56:20.750 [main] DEBUG org.apache.hc.client5.http.impl.classic.MainClientExec - ex-0000000004 executing GET /LATEST_RELEASE HTTP/1.1
+18:56:20.750 [main] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient - ep-0000000003 start execution ex-0000000004
+18:56:20.750 [main] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-0000000003 executing exchange ex-0000000004 over http-outgoing-2
+18:56:20.751 [main] DEBUG org.apache.hc.client5.http.headers - http-outgoing-2 >> GET /LATEST_RELEASE HTTP/1.1
+18:56:20.751 [main] DEBUG org.apache.hc.client5.http.headers - http-outgoing-2 >> user-agent: Apache-HttpClient/5.0
+18:56:20.751 [main] DEBUG org.apache.hc.client5.http.headers - http-outgoing-2 >> accept-encoding: gzip, deflate, br
+18:56:20.751 [main] DEBUG org.apache.hc.client5.http.headers - http-outgoing-2 >> cache-control: max-age=0
+18:56:20.751 [main] DEBUG org.apache.hc.client5.http.headers - http-outgoing-2 >> connection: keep-alive
+18:56:20.751 [main] DEBUG org.apache.hc.client5.http.headers - http-outgoing-2 >> Host: chromedriver.storage.googleapis.com
+18:56:20.751 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-2 >> "GET /LATEST_RELEASE HTTP/1.1[\r][\n]"
+18:56:20.751 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-2 >> "user-agent: Apache-HttpClient/5.0[\r][\n]"
+18:56:20.751 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-2 >> "accept-encoding: gzip, deflate, br[\r][\n]"
+18:56:20.751 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-2 >> "cache-control: max-age=0[\r][\n]"
+18:56:20.751 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-2 >> "connection: keep-alive[\r][\n]"
+18:56:20.751 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-2 >> "Host: chromedriver.storage.googleapis.com[\r][\n]"
+18:56:20.751 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-2 >> "[\r][\n]"
+18:56:20.892 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-2 << "HTTP/1.1 200 OK[\r][\n]"
+18:56:20.892 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-2 << "X-GUploader-UploadID: ACJd0Np2gdBa3W8U0helWv4joWZ5TYPMf4WQZjkuyj_cYQND9hPAL4okjM8xZAbsZEkuHoxU-_bNeSebrA[\r][\n]"
+18:56:20.892 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-2 << "x-goog-generation: 1685523462105569[\r][\n]"
+18:56:20.892 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-2 << "x-goog-metageneration: 1[\r][\n]"
+18:56:20.892 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-2 << "x-goog-stored-content-encoding: identity[\r][\n]"
+18:56:20.892 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-2 << "x-goog-stored-content-length: 13[\r][\n]"
+18:56:20.892 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-2 << "x-goog-hash: crc32c=tVW4TA==[\r][\n]"
+18:56:20.892 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-2 << "x-goog-hash: md5=NoaEuIlBlniwTkiZ1T16sA==[\r][\n]"
+18:56:20.892 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-2 << "x-goog-storage-class: STANDARD[\r][\n]"
+18:56:20.892 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-2 << "Accept-Ranges: bytes[\r][\n]"
+18:56:20.892 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-2 << "Content-Length: 13[\r][\n]"
+18:56:20.892 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-2 << "Server: UploadServer[\r][\n]"
+18:56:20.892 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-2 << "Date: Sun, 21 Jul 2024 13:26:19 GMT[\r][\n]"
+18:56:20.892 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-2 << "Expires: Sun, 21 Jul 2024 14:26:19 GMT[\r][\n]"
+18:56:20.892 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-2 << "Cache-Control: public, max-age=3600[\r][\n]"
+18:56:20.893 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-2 << "Age: 2[\r][\n]"
+18:56:20.893 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-2 << "Last-Modified: Wed, 31 May 2023 08:57:42 GMT[\r][\n]"
+18:56:20.893 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-2 << "ETag: "368684b889419678b04e4899d53d7ab0"[\r][\n]"
+18:56:20.893 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-2 << "Content-Type: text/plain[\r][\n]"
+18:56:20.893 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-2 << "Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000[\r][\n]"
+18:56:20.893 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-2 << "[\r][\n]"
+18:56:20.893 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-2 << "114.0.5735.90"
+18:56:20.894 [main] DEBUG org.apache.hc.client5.http.headers - http-outgoing-2 << HTTP/1.1 200 OK
+18:56:20.894 [main] DEBUG org.apache.hc.client5.http.headers - http-outgoing-2 << X-GUploader-UploadID: ACJd0Np2gdBa3W8U0helWv4joWZ5TYPMf4WQZjkuyj_cYQND9hPAL4okjM8xZAbsZEkuHoxU-_bNeSebrA
+18:56:20.894 [main] DEBUG org.apache.hc.client5.http.headers - http-outgoing-2 << x-goog-generation: 1685523462105569
+18:56:20.894 [main] DEBUG org.apache.hc.client5.http.headers - http-outgoing-2 << x-goog-metageneration: 1
+18:56:20.894 [main] DEBUG org.apache.hc.client5.http.headers - http-outgoing-2 << x-goog-stored-content-encoding: identity
+18:56:20.894 [main] DEBUG org.apache.hc.client5.http.headers - http-outgoing-2 << x-goog-stored-content-length: 13
+18:56:20.894 [main] DEBUG org.apache.hc.client5.http.headers - http-outgoing-2 << x-goog-hash: crc32c=tVW4TA==
+18:56:20.894 [main] DEBUG org.apache.hc.client5.http.headers - http-outgoing-2 << x-goog-hash: md5=NoaEuIlBlniwTkiZ1T16sA==
+18:56:20.894 [main] DEBUG org.apache.hc.client5.http.headers - http-outgoing-2 << x-goog-storage-class: STANDARD
+18:56:20.894 [main] DEBUG org.apache.hc.client5.http.headers - http-outgoing-2 << Accept-Ranges: bytes
+18:56:20.894 [main] DEBUG org.apache.hc.client5.http.headers - http-outgoing-2 << Content-Length: 13
+18:56:20.894 [main] DEBUG org.apache.hc.client5.http.headers - http-outgoing-2 << Server: UploadServer
+18:56:20.894 [main] DEBUG org.apache.hc.client5.http.headers - http-outgoing-2 << Date: Sun, 21 Jul 2024 13:26:19 GMT
+18:56:20.894 [main] DEBUG org.apache.hc.client5.http.headers - http-outgoing-2 << Expires: Sun, 21 Jul 2024 14:26:19 GMT
+18:56:20.894 [main] DEBUG org.apache.hc.client5.http.headers - http-outgoing-2 << Cache-Control: public, max-age=3600
+18:56:20.894 [main] DEBUG org.apache.hc.client5.http.headers - http-outgoing-2 << Age: 2
+18:56:20.894 [main] DEBUG org.apache.hc.client5.http.headers - http-outgoing-2 << Last-Modified: Wed, 31 May 2023 08:57:42 GMT
+18:56:20.894 [main] DEBUG org.apache.hc.client5.http.headers - http-outgoing-2 << ETag: "368684b889419678b04e4899d53d7ab0"
+18:56:20.894 [main] DEBUG org.apache.hc.client5.http.headers - http-outgoing-2 << Content-Type: text/plain
+18:56:20.894 [main] DEBUG org.apache.hc.client5.http.headers - http-outgoing-2 << Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+18:56:20.895 [main] DEBUG org.apache.hc.client5.http.impl.classic.MainClientExec - ex-0000000004 connection can be kept alive for 3 MINUTES
+18:56:20.895 [main] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient - ep-0000000003 releasing valid endpoint
+18:56:20.895 [main] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-0000000003 releasing endpoint
+18:56:20.896 [main] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-0000000003 connection http-outgoing-2 can be kept alive for 3 MINUTES
+18:56:20.896 [main] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-0000000003 connection released [route: {s}->https://chromedriver.storage.googleapis.com:443][total available: 2; route allocated: 2 of 5; total allocated: 3 of 25]
+18:56:20.896 [main] DEBUG io.github.bonigarcia.wdm.versions.VersionDetector - Latest version of chromedriver according to https://chromedriver.storage.googleapis.com/LATEST_RELEASE is 114.0.5735.90
+18:56:20.927 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager - Driver chromedriver 114.0.5735.90 found in cache
+18:56:20.932 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Rahul Chakrabarty\.cache\selenium\chromedriver\win32\114.0.5735.90\chromedriver.exe
+18:56:21.190 [main] DEBUG io.netty.util.internal.logging.InternalLoggerFactory - Using SLF4J as the default logging framework
+18:56:21.196 [main] DEBUG io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.level: simple
+18:56:21.197 [main] DEBUG io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.targetRecords: 4
+18:56:21.219 [main] DEBUG io.netty.util.ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@600b90df
+18:56:21.244 [main] DEBUG io.netty.util.internal.PlatformDependent0 - -Dio.netty.noUnsafe: false
+18:56:21.245 [main] DEBUG io.netty.util.internal.PlatformDependent0 - Java version: 18
+18:56:21.249 [main] DEBUG io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
+18:56:21.253 [main] DEBUG io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.copyMemory: available
+18:56:21.254 [main] DEBUG io.netty.util.internal.PlatformDependent0 - java.nio.Buffer.address: available
+18:56:21.255 [main] DEBUG io.netty.util.internal.PlatformDependent0 - direct buffer constructor: unavailable: Reflective setAccessible(true) disabled
+18:56:21.257 [main] DEBUG io.netty.util.internal.PlatformDependent0 - java.nio.Bits.unaligned: available, true
+18:56:21.259 [main] DEBUG io.netty.util.internal.PlatformDependent0 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable: class io.netty.util.internal.PlatformDependent0$6 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @2931522b
+18:56:21.261 [main] DEBUG io.netty.util.internal.PlatformDependent0 - java.nio.DirectByteBuffer.<init>(long, int): unavailable
+18:56:21.262 [main] DEBUG io.netty.util.internal.PlatformDependent - sun.misc.Unsafe: available
+18:56:21.282 [main] DEBUG io.netty.util.internal.PlatformDependent - maxDirectMemory: 1849688064 bytes (maybe)
+18:56:21.283 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.tmpdir: C:\Users\RAHULC~1\AppData\Local\Temp (java.io.tmpdir)
+18:56:21.283 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+18:56:21.284 [main] DEBUG io.netty.util.internal.PlatformDependent - Platform: Windows
+18:56:21.285 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.maxDirectMemory: -1 bytes
+18:56:21.286 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+18:56:21.291 [main] DEBUG io.netty.util.internal.CleanerJava9 - java.nio.ByteBuffer.cleaner(): available
+18:56:21.291 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.noPreferDirect: false
+18:56:21.307 [main] DEBUG io.netty.util.internal.PlatformDependent - org.jctools-core.MpscChunkedArrayQueue: available
+18:56:21.338 [main] DEBUG io.netty.util.internal.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+18:56:21.338 [main] DEBUG io.netty.util.internal.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+18:56:21.361 [main] DEBUG io.netty.handler.ssl.JdkSslContext - Default protocols (JDK): [TLSv1.3, TLSv1.2] 
+18:56:21.362 [main] DEBUG io.netty.handler.ssl.JdkSslContext - Default cipher suites (JDK): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384]
+18:56:21.438 [main] DEBUG io.netty.channel.MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 4
+18:56:21.477 [main] DEBUG io.netty.channel.nio.NioEventLoop - -Dio.netty.noKeySetOptimization: false
+18:56:21.478 [main] DEBUG io.netty.channel.nio.NioEventLoop - -Dio.netty.selectorAutoRebuildThreshold: 512
+18:56:21.554 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.numHeapArenas: 4
+18:56:21.555 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.numDirectArenas: 4
+18:56:21.555 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.pageSize: 8192
+18:56:21.555 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxOrder: 11
+18:56:21.555 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.chunkSize: 16777216
+18:56:21.555 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.smallCacheSize: 256
+18:56:21.555 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.normalCacheSize: 64
+18:56:21.555 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+18:56:21.555 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimInterval: 8192
+18:56:21.555 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+18:56:21.555 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.useCacheForAllThreads: true
+18:56:21.555 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+18:56:21.577 [main] DEBUG io.netty.buffer.ByteBufUtil - -Dio.netty.allocator.type: pooled
+18:56:21.577 [main] DEBUG io.netty.buffer.ByteBufUtil - -Dio.netty.threadLocalDirectBufferSize: 0
+18:56:21.577 [main] DEBUG io.netty.buffer.ByteBufUtil - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+18:56:22.529 [Forwarding newSession on session null to remote] DEBUG io.netty.channel.DefaultChannelId - -Dio.netty.processId: 5488 (auto-detected)
+18:56:22.531 [Forwarding newSession on session null to remote] DEBUG io.netty.util.NetUtil - -Djava.net.preferIPv4Stack: false
+18:56:22.531 [Forwarding newSession on session null to remote] DEBUG io.netty.util.NetUtil - -Djava.net.preferIPv6Addresses: false
+18:56:22.549 [Forwarding newSession on session null to remote] DEBUG io.netty.util.NetUtilInitializations - Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+18:56:22.551 [Forwarding newSession on session null to remote] DEBUG io.netty.util.NetUtil - Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
+18:56:22.597 [Forwarding newSession on session null to remote] DEBUG io.netty.channel.DefaultChannelId - -Dio.netty.machineId: b0:fc:36:ff:fe:70:0a:81 (auto-detected)
+18:56:22.682 [AsyncHttpClient-1-2] DEBUG io.netty.buffer.AbstractByteBuf - -Dio.netty.buffer.checkAccessible: true
+18:56:22.682 [AsyncHttpClient-1-2] DEBUG io.netty.buffer.AbstractByteBuf - -Dio.netty.buffer.checkBounds: true
+18:56:22.682 [AsyncHttpClient-1-2] DEBUG io.netty.util.ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@42293a9b
+18:56:22.701 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.NettyConnectListener - Using new Channel '[id: 0x3180e8f8, L:/127.0.0.1:55671 - R:localhost/127.0.0.1:56407]' for 'POST' to '/session'
+18:56:22.746 [AsyncHttpClient-1-2] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.maxCapacityPerThread: 4096
+18:56:22.746 [AsyncHttpClient-1-2] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.ratio: 8
+18:56:22.746 [AsyncHttpClient-1-2] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.chunkSize: 32
+18:56:22.746 [AsyncHttpClient-1-2] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.blocking: false
+18:56:26.619 [AsyncHttpClient-1-2] DEBUG io.netty.handler.codec.compression.Brotli - brotli4j not in the classpath; Brotli support will be unavailable.
+18:56:26.621 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session HTTP/1.1
+User-Agent: selenium/4.1.2 (java windows)
+Content-Length: 613
+Content-Type: application/json; charset=utf-8
+host: localhost:56407
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 886
+
+18:56:26.639 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:56407 for channel [id: 0x3180e8f8, L:/127.0.0.1:55671 - R:localhost/127.0.0.1:56407]
+18:56:27.442 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:56407 : 1
+18:56:27.608 [AsyncHttpClient-1-3] DEBUG org.asynchttpclient.netty.channel.NettyConnectListener - Using new Channel '[id: 0x4d32529a, L:/127.0.0.1:55678 - R:localhost/127.0.0.1:55672]' for 'GET' to '/json/version'
+18:56:27.632 [AsyncHttpClient-1-3] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+GET /json/version HTTP/1.1
+User-Agent: selenium/4.1.2 (java windows)
+host: localhost:55672
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Security-Policy: frame-ancestors 'none'
+Content-Type: application/json; charset=UTF-8
+content-length: 424
+
+18:56:27.633 [AsyncHttpClient-1-3] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:55672 for channel [id: 0x4d32529a, L:/127.0.0.1:55678 - R:localhost/127.0.0.1:55672]
+18:56:27.659 [main] DEBUG io.netty.util.internal.ThreadLocalRandom - -Dio.netty.initialSeedUniquifier: 0xf9398c43baf1db7a
+18:56:27.679 [AsyncHttpClient-1-4] DEBUG org.asynchttpclient.netty.channel.NettyConnectListener - Using new Channel '[id: 0x7caf3d87, L:/127.0.0.1:55679 - R:localhost/127.0.0.1:55672]' for 'GET' to '/devtools/browser/c10b2bac-6b01-4558-9f8d-3d33edb7378b'
+18:56:27.707 [AsyncHttpClient-1-4] DEBUG org.asynchttpclient.netty.handler.WebSocketHandler - 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+GET /devtools/browser/c10b2bac-6b01-4558-9f8d-3d33edb7378b HTTP/1.1
+upgrade: websocket
+connection: upgrade
+sec-websocket-key: jMyEtAaFhhn3YxupbTsvjQ==
+sec-websocket-version: 13
+origin: http://localhost:55672
+host: localhost:55672
+accept: */*
+user-agent: AHC/2.1
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 101 WebSocket Protocol Handshake
+Upgrade: WebSocket
+Connection: Upgrade
+Sec-WebSocket-Accept: kzpez/z9ehKS8cT6hwTugiEIU5Y=
+
+|  |Launch|  |
+execute()
+call getExecutableTestCases
+18:56:28.608 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:56407 : 1
+18:56:28.608 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:55672 : 1
+18:56:29.792 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:56407 : 1
+18:56:29.793 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:55672 : 1
+18:56:30.883 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:56407 : 1
+18:56:30.883 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:55672 : 1
+18:56:31.926 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:56407 : 1
+18:56:31.926 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:55672 : 1
+Test Cases to be executed: [TC01_GoogleLogin]
+For Test Case: TC01_GoogleLogin
+call getExecutableMethods
+Test Case: TC01_GoogleLogin. Methods to be executed: [login]
+Executable method path: com.Applications.Google.bussinesscomponents.Google_Keywords.login
+executeMethod: 'com.Applications.Google.bussinesscomponents.Google_Keywords.login'
+executeMethod 1
+executeMethod 2
+executeMethod 3
+executeMethod 4 (Created object instance)
+executeMethod 5
+18:56:32.505 [Forwarding get on session 37de81cb811e199fdb2684797575bcc1 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x3180e8f8, L:/127.0.0.1:55671 - R:localhost/127.0.0.1:56407]' for 'POST' to 'http://localhost:56407/session/37de81cb811e199fdb2684797575bcc1/url'
+18:56:32.506 [Forwarding get on session 37de81cb811e199fdb2684797575bcc1 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x3180e8f8, L:/127.0.0.1:55671 - R:localhost/127.0.0.1:56407] for POST '/session/37de81cb811e199fdb2684797575bcc1/url'
+18:56:33.019 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:55672 : 1
+18:56:34.121 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:55672 : 1
+18:56:35.216 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:55672 : 1
+18:56:36.315 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:55672 : 1
+18:56:37.420 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:55672 : 1
+18:56:38.518 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:55672 : 1
+18:56:39.626 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:55672 : 1
+18:56:41.091 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:55672 : 1
+18:56:42.131 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:55672 : 1
+18:56:43.245 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:55672 : 1
+18:56:44.332 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:55672 : 1
+18:56:45.475 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:55672 : 1
+18:56:46.547 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:55672 : 1
+18:56:47.639 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:55672 : 1
+18:56:48.765 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:55672 : 1
+18:56:49.817 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:55672 : 1
+18:56:50.929 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:55672 : 1
+18:56:52.027 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:55672 : 1
+18:56:53.129 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:55672 : 1
+18:56:54.223 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:55672 : 1
+18:56:55.354 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:55672 : 1
+18:56:56.499 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:55672 : 1
+18:56:57.536 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:55672 : 1
+18:56:58.620 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:55672 : 1
+18:56:59.743 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:55672 : 1
+18:57:00.817 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:55672 : 1
+18:57:01.927 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:55672 : 1
+18:57:03.131 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:55672 : 1
+18:57:04.228 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:55672 : 1
+18:57:05.316 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:55672 : 1
+18:57:06.433 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:55672 : 1
+18:57:07.605 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:55672 : 1
+18:57:08.631 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:55672 : 1
+18:57:09.730 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:55672 : 1
+18:57:10.823 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:55672 : 1
+18:57:11.918 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:55672 : 1
+18:57:13.018 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:55672 : 1
+18:57:14.119 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:55672 : 1
+18:57:15.225 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:55672 : 1
+18:57:16.321 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:55672 : 1
+18:57:17.537 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:55672 : 1
+18:57:18.623 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:55672 : 1
+18:57:19.721 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:55672 : 1
+18:57:20.844 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:55672 : 1
+18:57:21.925 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:55672 : 1
+18:57:23.024 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:55672 : 1
+18:57:24.124 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:55672 : 1
+18:57:25.229 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:55672 : 1
+18:57:26.324 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:55672 : 1
+18:57:27.416 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:55672 : 1
+18:57:28.520 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:55672 : 1
+18:57:28.524 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Adding Candidate expired Channel [id: 0x4d32529a, L:/127.0.0.1:55678 - R:localhost/127.0.0.1:55672] isIdleTimeoutExpired=true isRemotelyClosed=false isTtlExpired=false
+18:57:28.524 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Closing Idle Channel [id: 0x4d32529a, L:/127.0.0.1:55678 - R:localhost/127.0.0.1:55672]
+18:57:28.528 [AsyncHttpClient-1-3] DEBUG org.asynchttpclient.netty.handler.HttpHandler - Channel Closed: [id: 0x4d32529a, L:/127.0.0.1:55678 ! R:localhost/127.0.0.1:55672] with attribute DISCARD
+18:57:28.544 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Closed 1 connections out of 1 in 11 ms
+18:59:32.522 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.timeout.TimeoutTimerTask - Request timeout to localhost/127.0.0.1:56407 after 180000 ms for NettyResponseFuture{currentRetry=0,
+	isDone=0,
+	isCancelled=0,
+	asyncHandler=org.asynchttpclient.AsyncCompletionHandlerBase@406aee18,
+	nettyRequest=org.asynchttpclient.netty.request.NettyRequest@3460a7bc,
+	future=java.util.concurrent.CompletableFuture@5bfeac26[Not completed],
+	uri=http://localhost:56407/session/37de81cb811e199fdb2684797575bcc1/url,
+	keepAlive=true,
+	redirectCount=0,
+	timeoutsHolder=org.asynchttpclient.netty.timeout.TimeoutsHolder@1b0508b5,
+	inAuth=0,
+	touch=1721568392520} after 180017 ms
+18:59:32.522 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Closing Channel [id: 0x3180e8f8, L:/127.0.0.1:55671 - R:localhost/127.0.0.1:56407] 
+18:59:32.523 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler - Channel Closed: [id: 0x3180e8f8, L:/127.0.0.1:55671 ! R:localhost/127.0.0.1:56407] with attribute DISCARD
+18:59:32.524 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Aborting Future NettyResponseFuture{currentRetry=0,
+	isDone=0,
+	isCancelled=0,
+	asyncHandler=org.asynchttpclient.AsyncCompletionHandlerBase@406aee18,
+	nettyRequest=org.asynchttpclient.netty.request.NettyRequest@3460a7bc,
+	future=java.util.concurrent.CompletableFuture@5bfeac26[Not completed],
+	uri=http://localhost:56407/session/37de81cb811e199fdb2684797575bcc1/url,
+	keepAlive=true,
+	redirectCount=0,
+	timeoutsHolder=org.asynchttpclient.netty.timeout.TimeoutsHolder@1b0508b5,
+	inAuth=0,
+	touch=1721568392520}
+
+18:59:32.524 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Request timeout to localhost/127.0.0.1:56407 after 180000 ms
+java.util.concurrent.TimeoutException: Request timeout to localhost/127.0.0.1:56407 after 180000 ms
+	at org.asynchttpclient.netty.timeout.TimeoutTimerTask.expire(TimeoutTimerTask.java:43)
+	at org.asynchttpclient.netty.timeout.RequestTimeoutTimerTask.run(RequestTimeoutTimerTask.java:50)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:715)
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:703)
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:790)
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:503)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+18:59:32.532 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.AsyncCompletionHandler - Request timeout to localhost/127.0.0.1:56407 after 180000 ms
+java.util.concurrent.TimeoutException: Request timeout to localhost/127.0.0.1:56407 after 180000 ms
+	at org.asynchttpclient.netty.timeout.TimeoutTimerTask.expire(TimeoutTimerTask.java:43)
+	at org.asynchttpclient.netty.timeout.RequestTimeoutTimerTask.run(RequestTimeoutTimerTask.java:50)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:715)
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:703)
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:790)
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:503)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+18:59:33.541 [AsyncHttpClient-1-5] DEBUG org.asynchttpclient.netty.channel.NettyConnectListener - Using new Channel '[id: 0x0582cb9d, L:/127.0.0.1:62597 - R:localhost/127.0.0.1:56407]' for 'POST' to '/session/37de81cb811e199fdb2684797575bcc1/url'
+19:01:52.300 [AsyncHttpClient-1-5] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/37de81cb811e199fdb2684797575bcc1/url HTTP/1.1
+User-Agent: selenium/4.1.2 (java windows)
+Content-Length: 54
+Content-Type: application/json; charset=utf-8
+host: localhost:56407
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 14
+
+19:01:52.301 [AsyncHttpClient-1-5] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:56407 for channel [id: 0x0582cb9d, L:/127.0.0.1:62597 - R:localhost/127.0.0.1:56407]
+19:01:52.501 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:56407 : 1
+19:01:53.521 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:56407 : 1
+19:01:54.628 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:56407 : 1
+19:01:55.720 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:56407 : 1
+19:01:56.817 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:56407 : 1
+19:01:57.327 [Forwarding findElement on session 37de81cb811e199fdb2684797575bcc1 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x0582cb9d, L:/127.0.0.1:62597 - R:localhost/127.0.0.1:56407]' for 'POST' to 'http://localhost:56407/session/37de81cb811e199fdb2684797575bcc1/element'
+19:01:57.328 [Forwarding findElement on session 37de81cb811e199fdb2684797575bcc1 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x0582cb9d, L:/127.0.0.1:62597 - R:localhost/127.0.0.1:56407] for POST '/session/37de81cb811e199fdb2684797575bcc1/element'
+19:01:57.355 [AsyncHttpClient-1-5] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/37de81cb811e199fdb2684797575bcc1/element HTTP/1.1
+User-Agent: selenium/4.1.2 (java windows)
+Content-Length: 69
+Content-Type: application/json; charset=utf-8
+host: localhost:56407
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 404 Not Found
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 957
+
+19:01:57.356 [AsyncHttpClient-1-5] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:56407 for channel [id: 0x0582cb9d, L:/127.0.0.1:62597 - R:localhost/127.0.0.1:56407]
+An error occurred during the login process!
+executeMethod 6
+For getExecutableMethods - Try!
+getExecutableMethods - Try!
+19:01:57.439 [AsyncHttpClient-1-4] DEBUG org.asynchttpclient.netty.handler.WebSocketHandler - Channel Closed: [id: 0x7caf3d87, L:/127.0.0.1:55679 ! R:localhost/127.0.0.1:55672] with attribute DISCARD
+19:01:57.443 [Driver Command Executor] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x0582cb9d, L:/127.0.0.1:62597 - R:localhost/127.0.0.1:56407]' for 'DELETE' to 'http://localhost:56407/session/37de81cb811e199fdb2684797575bcc1'
+19:01:57.443 [Driver Command Executor] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x0582cb9d, L:/127.0.0.1:62597 - R:localhost/127.0.0.1:56407] for DELETE '/session/37de81cb811e199fdb2684797575bcc1'
+19:01:58.827 [AsyncHttpClient-1-5] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+DELETE /session/37de81cb811e199fdb2684797575bcc1 HTTP/1.1
+User-Agent: selenium/4.1.2 (java windows)
+Content-Type: application/json; charset=utf-8
+host: localhost:56407
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 14
+
+19:01:58.828 [AsyncHttpClient-1-5] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:56407 for channel [id: 0x0582cb9d, L:/127.0.0.1:62597 - R:localhost/127.0.0.1:56407]
+19:01:59.023 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:56407 : 1
+19:01:59.221 [AsyncHttpClient-1-5] DEBUG org.asynchttpclient.netty.handler.HttpHandler - Channel Closed: [id: 0x0582cb9d, L:/127.0.0.1:62597 ! R:localhost/127.0.0.1:56407] with attribute DISCARD
+|  |Done|  |

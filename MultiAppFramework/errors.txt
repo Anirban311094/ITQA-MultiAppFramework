@@ -1,0 +1,446 @@
+Starting ChromeDriver 126.0.6478.182 (5b5d8292ddf182f8b2096fa665b473b6317906d5-refs/branch-heads/6478@{#1776}) on port 49741
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jul 21, 2024 12:41:05 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Jul 21, 2024 12:41:06 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 126, so returning the closest version found: a no-op implementation
+Jul 21, 2024 12:41:06 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Unable to find CDP implementation matching 126.
+Jul 21, 2024 12:41:06 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.1.2` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+ERROR StatusLogger Log4j2 could not find a logging implementation. Please add log4j-core to the classpath. Using SimpleLogger to log to the console...
+Starting ChromeDriver 126.0.6478.182 (5b5d8292ddf182f8b2096fa665b473b6317906d5-refs/branch-heads/6478@{#1776}) on port 54278
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jul 21, 2024 12:42:48 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Jul 21, 2024 12:42:49 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 126, so returning the closest version found: a no-op implementation
+Jul 21, 2024 12:42:49 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Unable to find CDP implementation matching 126.
+Jul 21, 2024 12:42:49 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.1.2` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+ERROR StatusLogger Log4j2 could not find a logging implementation. Please add log4j-core to the classpath. Using SimpleLogger to log to the console...
+[1721546272.457][SEVERE]: Timed out receiving message from renderer: 300.000
+[1721546272.510][SEVERE]: Timed out receiving message from renderer: 300.000
+Starting ChromeDriver 126.0.6478.182 (5b5d8292ddf182f8b2096fa665b473b6317906d5-refs/branch-heads/6478@{#1776}) on port 63241
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jul 21, 2024 1:12:19 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Jul 21, 2024 1:12:20 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 126, so returning the closest version found: a no-op implementation
+Jul 21, 2024 1:12:20 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Unable to find CDP implementation matching 126.
+Jul 21, 2024 1:12:20 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.1.2` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+ERROR StatusLogger Log4j2 could not find a logging implementation. Please add log4j-core to the classpath. Using SimpleLogger to log to the console...
+Starting ChromeDriver 126.0.6478.182 (5b5d8292ddf182f8b2096fa665b473b6317906d5-refs/branch-heads/6478@{#1776}) on port 57533
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jul 21, 2024 1:43:51 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Jul 21, 2024 1:43:52 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 126, so returning the closest version found: a no-op implementation
+Jul 21, 2024 1:43:52 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Unable to find CDP implementation matching 126.
+Jul 21, 2024 1:43:52 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.1.2` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+ERROR StatusLogger Log4j2 could not find a logging implementation. Please add log4j-core to the classpath. Using SimpleLogger to log to the console...
+java.lang.NullPointerException: Cannot invoke "Object.getClass()" because "obj" is null
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at com.executor.Executor.executeMethod(Executor.java:95)
+	at com.executor.Executor.lambda$1(Executor.java:63)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.executor.Executor.lambda$0(Executor.java:58)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.executor.Executor.execute(Executor.java:55)
+	at com.executor.Executor.main(Executor.java:41)
+Starting ChromeDriver 126.0.6478.182 (5b5d8292ddf182f8b2096fa665b473b6317906d5-refs/branch-heads/6478@{#1776}) on port 49955
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jul 21, 2024 5:43:32 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Jul 21, 2024 5:43:33 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 126, so returning the closest version found: a no-op implementation
+Jul 21, 2024 5:43:33 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Unable to find CDP implementation matching 126.
+Jul 21, 2024 5:43:33 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.1.2` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+ERROR StatusLogger Log4j2 could not find a logging implementation. Please add log4j-core to the classpath. Using SimpleLogger to log to the console...
+java.lang.NullPointerException: Cannot invoke "Object.getClass()" because "obj" is null
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at com.executor.Executor.executeMethod(Executor.java:105)
+	at com.executor.Executor.lambda$1(Executor.java:70)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.executor.Executor.lambda$0(Executor.java:67)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.executor.Executor.execute(Executor.java:57)
+	at com.executor.Executor.main(Executor.java:42)
+Starting ChromeDriver 126.0.6478.182 (5b5d8292ddf182f8b2096fa665b473b6317906d5-refs/branch-heads/6478@{#1776}) on port 59067
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jul 21, 2024 5:47:36 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Jul 21, 2024 5:47:37 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 126, so returning the closest version found: a no-op implementation
+Jul 21, 2024 5:47:37 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Unable to find CDP implementation matching 126.
+Jul 21, 2024 5:47:37 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.1.2` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+ERROR StatusLogger Log4j2 could not find a logging implementation. Please add log4j-core to the classpath. Using SimpleLogger to log to the console...
+java.lang.NullPointerException: Cannot invoke "Object.getClass()" because "obj" is null
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at com.executor.Executor.executeMethod(Executor.java:105)
+	at com.executor.Executor.lambda$1(Executor.java:70)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.executor.Executor.lambda$0(Executor.java:67)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.executor.Executor.execute(Executor.java:57)
+	at com.executor.Executor.main(Executor.java:42)
+Starting ChromeDriver 126.0.6478.182 (5b5d8292ddf182f8b2096fa665b473b6317906d5-refs/branch-heads/6478@{#1776}) on port 56933
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jul 21, 2024 5:52:07 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Jul 21, 2024 5:52:08 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 126, so returning the closest version found: a no-op implementation
+Jul 21, 2024 5:52:08 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Unable to find CDP implementation matching 126.
+Jul 21, 2024 5:52:08 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.1.2` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+Exception in thread "main" java.lang.NoClassDefFoundError: org/apache/logging/log4j/util/Lazy
+	at org.apache.logging.log4j.core.selector.ClassLoaderContextSelector.<init>(ClassLoaderContextSelector.java:55)
+	at org.apache.logging.log4j.core.impl.Log4jContextFactory.createContextSelector(Log4jContextFactory.java:108)
+	at org.apache.logging.log4j.core.impl.Log4jContextFactory.<init>(Log4jContextFactory.java:60)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.ReflectAccess.newInstance(ReflectAccess.java:128)
+	at java.base/jdk.internal.reflect.ReflectionFactory.newInstance(ReflectionFactory.java:341)
+	at java.base/java.lang.Class.newInstance(Class.java:677)
+	at org.apache.logging.log4j.LogManager.<clinit>(LogManager.java:95)
+	at org.apache.poi.ooxml.POIXMLDocumentPart.<clinit>(POIXMLDocumentPart.java:56)
+	at com.SetupAuxiliaries.excelhandle.ExcelHandles.getTheValues(ExcelHandles.java:25)
+	at com.SetupAuxiliaries.excelhandle.HandleExecutables.getExecutableTestCases(HandleExecutables.java:13)
+	at com.executor.Executor.execute(Executor.java:57)
+	at com.executor.Executor.main(Executor.java:42)
+Caused by: java.lang.ClassNotFoundException: org.apache.logging.log4j.util.Lazy
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	... 14 more
+Starting ChromeDriver 126.0.6478.182 (5b5d8292ddf182f8b2096fa665b473b6317906d5-refs/branch-heads/6478@{#1776}) on port 54853
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jul 21, 2024 5:52:29 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Jul 21, 2024 5:52:30 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 126, so returning the closest version found: a no-op implementation
+Jul 21, 2024 5:52:30 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Unable to find CDP implementation matching 126.
+Jul 21, 2024 5:52:30 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.1.2` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+Exception in thread "main" java.lang.NoClassDefFoundError: org/apache/logging/log4j/util/Lazy
+	at org.apache.logging.log4j.core.selector.ClassLoaderContextSelector.<init>(ClassLoaderContextSelector.java:55)
+	at org.apache.logging.log4j.core.impl.Log4jContextFactory.createContextSelector(Log4jContextFactory.java:108)
+	at org.apache.logging.log4j.core.impl.Log4jContextFactory.<init>(Log4jContextFactory.java:60)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.ReflectAccess.newInstance(ReflectAccess.java:128)
+	at java.base/jdk.internal.reflect.ReflectionFactory.newInstance(ReflectionFactory.java:341)
+	at java.base/java.lang.Class.newInstance(Class.java:677)
+	at org.apache.logging.log4j.LogManager.<clinit>(LogManager.java:95)
+	at org.apache.poi.ooxml.POIXMLDocumentPart.<clinit>(POIXMLDocumentPart.java:56)
+	at com.SetupAuxiliaries.excelhandle.ExcelHandles.getTheValues(ExcelHandles.java:25)
+	at com.SetupAuxiliaries.excelhandle.HandleExecutables.getExecutableTestCases(HandleExecutables.java:13)
+	at com.executor.Executor.execute(Executor.java:57)
+	at com.executor.Executor.main(Executor.java:42)
+Caused by: java.lang.ClassNotFoundException: org.apache.logging.log4j.util.Lazy
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	... 14 more
+Starting ChromeDriver 126.0.6478.182 (5b5d8292ddf182f8b2096fa665b473b6317906d5-refs/branch-heads/6478@{#1776}) on port 56011
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jul 21, 2024 5:52:44 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Jul 21, 2024 5:52:45 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 126, so returning the closest version found: a no-op implementation
+Jul 21, 2024 5:52:45 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Unable to find CDP implementation matching 126.
+Jul 21, 2024 5:52:45 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.1.2` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+Exception in thread "main" java.lang.NoClassDefFoundError: org/apache/logging/log4j/util/Lazy
+	at org.apache.logging.log4j.core.selector.ClassLoaderContextSelector.<init>(ClassLoaderContextSelector.java:55)
+	at org.apache.logging.log4j.core.impl.Log4jContextFactory.createContextSelector(Log4jContextFactory.java:108)
+	at org.apache.logging.log4j.core.impl.Log4jContextFactory.<init>(Log4jContextFactory.java:60)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.ReflectAccess.newInstance(ReflectAccess.java:128)
+	at java.base/jdk.internal.reflect.ReflectionFactory.newInstance(ReflectionFactory.java:341)
+	at java.base/java.lang.Class.newInstance(Class.java:677)
+	at org.apache.logging.log4j.LogManager.<clinit>(LogManager.java:95)
+	at org.apache.poi.ooxml.POIXMLDocumentPart.<clinit>(POIXMLDocumentPart.java:56)
+	at com.SetupAuxiliaries.excelhandle.ExcelHandles.getTheValues(ExcelHandles.java:25)
+	at com.SetupAuxiliaries.excelhandle.HandleExecutables.getExecutableTestCases(HandleExecutables.java:13)
+	at com.executor.Executor.execute(Executor.java:57)
+	at com.executor.Executor.main(Executor.java:42)
+Caused by: java.lang.ClassNotFoundException: org.apache.logging.log4j.util.Lazy
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	... 14 more
+Starting ChromeDriver 126.0.6478.182 (5b5d8292ddf182f8b2096fa665b473b6317906d5-refs/branch-heads/6478@{#1776}) on port 63450
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jul 21, 2024 5:56:40 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Jul 21, 2024 5:56:41 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 126, so returning the closest version found: a no-op implementation
+Jul 21, 2024 5:56:41 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Unable to find CDP implementation matching 126.
+Jul 21, 2024 5:56:41 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.1.2` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+Exception in thread "main" java.lang.NoClassDefFoundError: org/apache/logging/log4j/util/Lazy
+	at org.apache.logging.log4j.core.selector.ClassLoaderContextSelector.<init>(ClassLoaderContextSelector.java:55)
+	at org.apache.logging.log4j.core.impl.Log4jContextFactory.createContextSelector(Log4jContextFactory.java:108)
+	at org.apache.logging.log4j.core.impl.Log4jContextFactory.<init>(Log4jContextFactory.java:60)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.ReflectAccess.newInstance(ReflectAccess.java:128)
+	at java.base/jdk.internal.reflect.ReflectionFactory.newInstance(ReflectionFactory.java:341)
+	at java.base/java.lang.Class.newInstance(Class.java:677)
+	at org.apache.logging.log4j.LogManager.<clinit>(LogManager.java:95)
+	at org.apache.poi.ooxml.POIXMLDocumentPart.<clinit>(POIXMLDocumentPart.java:56)
+	at com.SetupAuxiliaries.excelhandle.ExcelHandles.getTheValues(ExcelHandles.java:25)
+	at com.SetupAuxiliaries.excelhandle.HandleExecutables.getExecutableTestCases(HandleExecutables.java:13)
+	at com.executor.Executor.execute(Executor.java:57)
+	at com.executor.Executor.main(Executor.java:42)
+Caused by: java.lang.ClassNotFoundException: org.apache.logging.log4j.util.Lazy
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	... 14 more
+Starting ChromeDriver 126.0.6478.182 (5b5d8292ddf182f8b2096fa665b473b6317906d5-refs/branch-heads/6478@{#1776}) on port 63583
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jul 21, 2024 5:58:57 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Jul 21, 2024 5:58:57 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 126, so returning the closest version found: a no-op implementation
+Jul 21, 2024 5:58:57 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Unable to find CDP implementation matching 126.
+Jul 21, 2024 5:58:57 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.1.2` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+Exception in thread "main" java.lang.NoClassDefFoundError: org/apache/logging/log4j/util/Lazy
+	at org.apache.logging.log4j.core.selector.ClassLoaderContextSelector.<init>(ClassLoaderContextSelector.java:55)
+	at org.apache.logging.log4j.core.impl.Log4jContextFactory.createContextSelector(Log4jContextFactory.java:108)
+	at org.apache.logging.log4j.core.impl.Log4jContextFactory.<init>(Log4jContextFactory.java:60)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.ReflectAccess.newInstance(ReflectAccess.java:128)
+	at java.base/jdk.internal.reflect.ReflectionFactory.newInstance(ReflectionFactory.java:341)
+	at java.base/java.lang.Class.newInstance(Class.java:677)
+	at org.apache.logging.log4j.LogManager.<clinit>(LogManager.java:95)
+	at org.apache.poi.ooxml.POIXMLDocumentPart.<clinit>(POIXMLDocumentPart.java:56)
+	at com.SetupAuxiliaries.excelhandle.ExcelHandles.getTheValues(ExcelHandles.java:25)
+	at com.SetupAuxiliaries.excelhandle.HandleExecutables.getExecutableTestCases(HandleExecutables.java:14)
+	at com.executor.Executor.execute(Executor.java:57)
+	at com.executor.Executor.main(Executor.java:42)
+Caused by: java.lang.ClassNotFoundException: org.apache.logging.log4j.util.Lazy
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	... 14 more
+Starting ChromeDriver 126.0.6478.182 (5b5d8292ddf182f8b2096fa665b473b6317906d5-refs/branch-heads/6478@{#1776}) on port 57648
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jul 21, 2024 6:01:36 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Jul 21, 2024 6:01:37 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 126, so returning the closest version found: a no-op implementation
+Jul 21, 2024 6:01:37 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Unable to find CDP implementation matching 126.
+Jul 21, 2024 6:01:37 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.1.2` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+ERROR StatusLogger Log4j2 could not find a logging implementation. Please add log4j-core to the classpath. Using SimpleLogger to log to the console...
+java.lang.NullPointerException: Cannot invoke "Object.getClass()" because "obj" is null
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at com.executor.Executor.executeMethod(Executor.java:105)
+	at com.executor.Executor.lambda$1(Executor.java:70)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.executor.Executor.lambda$0(Executor.java:67)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.executor.Executor.execute(Executor.java:57)
+	at com.executor.Executor.main(Executor.java:42)
+Starting ChromeDriver 126.0.6478.182 (5b5d8292ddf182f8b2096fa665b473b6317906d5-refs/branch-heads/6478@{#1776}) on port 54823
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jul 21, 2024 6:10:41 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Jul 21, 2024 6:10:42 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 126, so returning the closest version found: a no-op implementation
+Jul 21, 2024 6:10:42 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Unable to find CDP implementation matching 126.
+Jul 21, 2024 6:10:42 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.1.2` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+java.lang.NullPointerException: Cannot invoke "Object.getClass()" because "obj" is null
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at com.executor.Executor.executeMethod(Executor.java:105)
+	at com.executor.Executor.lambda$1(Executor.java:70)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.executor.Executor.lambda$0(Executor.java:67)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.executor.Executor.execute(Executor.java:57)
+	at com.executor.Executor.main(Executor.java:42)
+Starting ChromeDriver 126.0.6478.182 (5b5d8292ddf182f8b2096fa665b473b6317906d5-refs/branch-heads/6478@{#1776}) on port 63901
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jul 21, 2024 6:11:50 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Jul 21, 2024 6:11:51 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 126, so returning the closest version found: a no-op implementation
+Jul 21, 2024 6:11:51 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Unable to find CDP implementation matching 126.
+Jul 21, 2024 6:11:51 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.1.2` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+ERROR StatusLogger Log4j2 could not find a logging implementation. Please add log4j-core to the classpath. Using SimpleLogger to log to the console...
+java.lang.NullPointerException: Cannot invoke "Object.getClass()" because "obj" is null
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at com.executor.Executor.executeMethod(Executor.java:105)
+	at com.executor.Executor.lambda$1(Executor.java:70)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.executor.Executor.lambda$0(Executor.java:67)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.executor.Executor.execute(Executor.java:57)
+	at com.executor.Executor.main(Executor.java:42)
+Starting ChromeDriver 126.0.6478.182 (5b5d8292ddf182f8b2096fa665b473b6317906d5-refs/branch-heads/6478@{#1776}) on port 50441
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jul 21, 2024 6:38:35 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Jul 21, 2024 6:38:35 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 126, so returning the closest version found: a no-op implementation
+Jul 21, 2024 6:38:35 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Unable to find CDP implementation matching 126.
+Jul 21, 2024 6:38:35 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.1.2` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+ERROR StatusLogger Log4j2 could not find a logging implementation. Please add log4j-core to the classpath. Using SimpleLogger to log to the console...
+java.lang.NoSuchMethodException: com.Applications.Google.bussinesscomponents.Google_Keywords.loging()
+	at java.base/java.lang.Class.getMethod(Class.java:2259)
+	at com.executor.Executor.executeMethod(Executor.java:102)
+	at com.executor.Executor.lambda$1(Executor.java:70)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.executor.Executor.lambda$0(Executor.java:67)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.executor.Executor.execute(Executor.java:57)
+	at com.executor.Executor.main(Executor.java:42)
+Starting ChromeDriver 126.0.6478.182 (5b5d8292ddf182f8b2096fa665b473b6317906d5-refs/branch-heads/6478@{#1776}) on port 55850
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jul 21, 2024 6:41:19 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Jul 21, 2024 6:41:20 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 126, so returning the closest version found: a no-op implementation
+Jul 21, 2024 6:41:20 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Unable to find CDP implementation matching 126.
+Jul 21, 2024 6:41:20 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.1.2` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+ERROR StatusLogger Log4j2 could not find a logging implementation. Please add log4j-core to the classpath. Using SimpleLogger to log to the console...
+java.lang.NullPointerException: Cannot invoke "Object.getClass()" because "obj" is null
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at com.executor.Executor.executeMethod(Executor.java:105)
+	at com.executor.Executor.lambda$1(Executor.java:70)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.executor.Executor.lambda$0(Executor.java:67)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.executor.Executor.execute(Executor.java:57)
+	at com.executor.Executor.main(Executor.java:42)
+Starting ChromeDriver 126.0.6478.182 (5b5d8292ddf182f8b2096fa665b473b6317906d5-refs/branch-heads/6478@{#1776}) on port 59243
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jul 21, 2024 6:45:10 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Jul 21, 2024 6:45:11 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 126, so returning the closest version found: a no-op implementation
+Jul 21, 2024 6:45:11 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Unable to find CDP implementation matching 126.
+Jul 21, 2024 6:45:11 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.1.2` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+ERROR StatusLogger Log4j2 could not find a logging implementation. Please add log4j-core to the classpath. Using SimpleLogger to log to the console...
+java.lang.NullPointerException: Cannot invoke "Object.getClass()" because "obj" is null
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at com.executor.Executor.executeMethod(Executor.java:106)
+	at com.executor.Executor.lambda$1(Executor.java:70)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.executor.Executor.lambda$0(Executor.java:67)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.executor.Executor.execute(Executor.java:57)
+	at com.executor.Executor.main(Executor.java:42)
+Starting ChromeDriver 126.0.6478.182 (5b5d8292ddf182f8b2096fa665b473b6317906d5-refs/branch-heads/6478@{#1776}) on port 56407
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jul 21, 2024 6:56:27 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Jul 21, 2024 6:56:27 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 126, so returning the closest version found: a no-op implementation
+Jul 21, 2024 6:56:27 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Unable to find CDP implementation matching 126.
+Jul 21, 2024 6:56:27 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.1.2` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+ERROR StatusLogger Log4j2 could not find a logging implementation. Please add log4j-core to the classpath. Using SimpleLogger to log to the console...
+[1721568692.529][SEVERE]: Timed out receiving message from renderer: 300.000
+[1721568692.958][SEVERE]: Timed out receiving message from renderer: 300.000
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@type='email']"}
+  (Session info: chrome=126.0.6478.182)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'LAPTOP-FMP6TPRD', ip: '192.168.194.221', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [37de81cb811e199fdb2684797575bcc1, findElement {using=xpath, value=//input[@type='email']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.182, chrome: {chromedriverVersion: 126.0.6478.182 (5b5d8292ddf..., userDataDir: C:\Users\RAHULC~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55672}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55672/devtoo..., se:cdpVersion: 126.0.6478.182, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 37de81cb811e199fdb2684797575bcc1
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:382)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
+	at com.Applications.Google.bussinesscomponents.Google_Keywords.login(Google_Keywords.java:25)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at com.executor.Executor.executeMethod(Executor.java:115)
+	at com.executor.Executor.lambda$1(Executor.java:70)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.executor.Executor.lambda$0(Executor.java:67)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.executor.Executor.execute(Executor.java:57)
+	at com.executor.Executor.main(Executor.java:42)
