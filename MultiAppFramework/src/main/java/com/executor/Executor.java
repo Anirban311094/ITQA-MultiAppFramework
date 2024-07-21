@@ -27,7 +27,7 @@ public class Executor {
                 .build();
 
         ChromeOptions options = new ChromeOptions();
-        options.setBinary("C:\\Users\\Rahul Chakrabarty\\git\\ITQA-MultiAppFramework\\MultiAppFramework\\src\\main\\resources\\chrome-win64\\chrome.exe");
+        options.setBinary("C:\\Users\\Rahul Chakrabarty\\git\\ITQA-MultiAppFramework\\MultiAppFramework\\src\\main\\java\\com\\BrowserDrivers\\chrome-win64\\chrome.exe");
         options.addArguments("--remote-allow-origins=*");
 
         return new ChromeDriver(service, options);
