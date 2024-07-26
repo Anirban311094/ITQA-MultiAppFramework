@@ -1,6 +1,8 @@
 package com.Applications.Google.bussinesscomponents;
 
 import com.ActionComponents.*;
+import com.Applications.Google.uimap.Google_UIMap;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -25,17 +27,17 @@ public class Google_Keywords {
         	
             driver.get(url);
             Thread.sleep(5000);
-            String title=driver.findElement(By.xpath("//title")).getText().trim();
+            String title=driver.findElement(Google_UIMap.login.title).getText().trim();
             System.out.println("Title: "+title);
-            String header1=driver.findElement(By.xpath("//h1[@id='headingText']/span")).getText().trim();
+            String header1=driver.findElement(Google_UIMap.login.header1).getText().trim();
             System.out.println("Header 1: "+header1);
-            String header2=driver.findElement(By.xpath("//h1[@id='headingText']//following::div[1]/span")).getText().trim();
+            String header2=driver.findElement(Google_UIMap.login.header2).getText().trim();
             System.out.println("Header 2: "+header2);
             
             driver.findElement(By.xpath(UserName)).click();
             Thread.sleep(5000);
             
-            WebElement emailField = driver.findElement(By.xpath("//input[@type='email']"));
+            WebElement emailField = driver.findElement(Google_UIMap.login.email_input);
             emailField.sendKeys("your.email@gmail.com");
 
             Thread.sleep(2000);
@@ -48,9 +50,9 @@ public class Google_Keywords {
             
             driver.findElement(By.xpath("//div[text()='Enter your password']")).click();
             
-            Actions.waitUntilClickable(By.xpath("//input[@name='Passwd']"), 5000);
+            Actions.waitUntilClickable(Google_UIMap.login.password_input, 5000);
             
-            WebElement passwordField = driver.findElement(By.xpath("//input[@name='Passwd']"));
+            WebElement passwordField = driver.findElement(Google_UIMap.login.password_input);
             passwordField.sendKeys(password);
 
             driver.findElement(By.xpath("//span[text()='Next']//ancestor::button")).click();
