@@ -19,6 +19,7 @@ public class Executor {
 	public String tc_Name;
 	public static WebDriver driver;
 	static HandleExecutables excelhandle=new HandleExecutables();
+	
     public static WebDriver initializeDriver() {
         WebDriverManager.chromedriver().setup();
         ChromeDriverService service = new ChromeDriverService.Builder()

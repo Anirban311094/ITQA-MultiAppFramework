@@ -8,7 +8,21 @@ public class PassInfos {
 
     private static final String PROPERTIES_FILE_PATH = "F:\\Project Workspace\\MultiAppFramework\\MultiAppFramework\\src\\main\\java\\com\\DataTables\\Settings.properties"; // Update the path
 
+    public String getProperties() {
+    	return PROPERTIES_FILE_PATH;
+    }
+    
     public static String getCurrentTestCaseName() {
+        Properties properties = new Properties();
+        try (FileInputStream inputStream = new FileInputStream(PROPERTIES_FILE_PATH)) {
+            properties.load(inputStream);
+            return properties.getProperty("CurrentTestCaseName");
+        } catch (IOException e) {
+            e.printStackTrace();
+            return null;
+        }
+    }
+    public static String getProperty(String  key) {
         Properties properties = new Properties();
         try (FileInputStream inputStream = new FileInputStream(PROPERTIES_FILE_PATH)) {
             properties.load(inputStream);
