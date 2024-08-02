@@ -17,7 +17,8 @@ public class ExcelHandles {
     
     //get values under getValueColumn where currentColumn=currentValue
     public static ArrayList<String> getTheValues(String filePath, String sheetName, String currentColumn, String currentValue, String getValueColumn) {
-        ArrayList<String> values = new ArrayList<>();
+        System.out.println("Path: "+filePath+"\n Sheet: "+sheetName+"\n Column: "+currentColumn+"\n currentValue"+currentValue+"\n getValueColumn"+getValueColumn);
+    	ArrayList<String> values = new ArrayList<>();
         FileInputStream fis = null;
         Workbook workbook = null;
         try {

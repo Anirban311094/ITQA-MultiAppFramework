@@ -1,10 +1,13 @@
 package com.executor;
 
 import com.Applications.Google.bussinesscomponents.Google_Keywords;
+import com.Applications.Amazon.bussinesscomponents.Amazon_Keywords;
+import com.Results.GenerateReport.PassInfos;
 import com.Results.GenerateReport.Report;
 
 import java.io.File;
 import java.io.IOException;
+import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 import java.util.ArrayList;
 import org.openqa.selenium.WebDriver;
@@ -19,16 +22,17 @@ public class Executor {
 	public String tc_Name;
 	public static WebDriver driver;
 	static HandleExecutables excelhandle=new HandleExecutables();
-	
+	public static String chromeDriverPath=PassInfos.getProperty("chromeDriverPath");
+	public static String chromePath=PassInfos.getProperty("chromePath");
     public static WebDriver initializeDriver() {
         WebDriverManager.chromedriver().setup();
         ChromeDriverService service = new ChromeDriverService.Builder()
-                .usingDriverExecutable(new File("C:\\Users\\Rahul Chakrabarty\\git\\ITQA-MultiAppFramework\\MultiAppFramework\\src\\main\\java\\com\\BrowserDrivers\\chromedriver.exe"))
+                .usingDriverExecutable(new File(chromeDriverPath))
                 .usingAnyFreePort()
                 .build();
 
         ChromeOptions options = new ChromeOptions();
-        options.setBinary("C:\\Users\\Rahul Chakrabarty\\git\\ITQA-MultiAppFramework\\MultiAppFramework\\src\\main\\java\\com\\BrowserDrivers\\chrome-win64\\chrome.exe");
+        options.setBinary(chromePath);
         options.addArguments("--remote-allow-origins=*");
 
         return new ChromeDriver(service, options);
@@ -38,7 +42,9 @@ public class Executor {
         try {
         	com.SetupAuxiliaries.consolehandle.ConsoleHandles.console_Handles();
             driver = initializeDriver();
+//            com.Applications.DriverSetter.driver=driver;
             Google_Keywords.driver = driver; // Set the driver in Google_Keywords
+            Amazon_Keywords.driver=driver; // Set the driver in Amazon_Keywords
             System.out.println("|  |Launch|  |");
             execute();
         } catch (Exception e) {
@@ -73,7 +79,8 @@ public class Executor {
 					} catch (Exception e) {
 						// TODO Auto-generated catch block
 						e.printStackTrace();
-						System.out.println("getExecutableMethods - Catch!");
+						
+						System.out.println("getExecutableMethods - Catch! \n"+e.getMessage()+"\n"+e.getLocalizedMessage());
 					}
 				});
 				System.out.println("getExecutableMethods - Try!");
@@ -110,10 +117,16 @@ public class Executor {
 
     	  // Get the method
     	  Method method = clazz.getMethod(methodName);
-    	  System.out.println("executeMethod 5");
+    	  System.out.println("executeMethod 5. \n "+obj.toString());
 
+    	 
+    	  
     	  // Invoke the method on the object instance
+    	  try {
     	  method.invoke(obj);
+    	  }catch(Exception e) {
+    		  System.out.println("Invoke Catch: "+e.getLocalizedMessage()+"\n"+e.getLocalizedMessage()+"\n"+e.getCause()+"\n"+e.getStackTrace()+"\n"+e.getSuppressed());
+    	  }
     	  System.out.println("executeMethod 6");
     	
 //    	System.out.println("executeMethod: '"+methodExecute+"'");

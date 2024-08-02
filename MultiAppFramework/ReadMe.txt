@@ -8,7 +8,9 @@ About Framework:
 Execution Trigger: Execute the program by running the Executor.java class. This class acts as the central driver for your automation framework.
 Test Selection: Executor.java will first parse the RunManager.xlsx spreadsheet. It will look for rows where the "Execute" column contains the value "Yes."
 Test Case Details: For each identified row in RunManager.xlsx, the following information will be extracted:
-Application: The name of the application under test (e.g., Google).
+Application: The name of the application under test (e.g., Google / Amazon). Mention it in Settings.properties in DataTables Folder.
+In PassInfos.java update the Settings.properties file path
+Update other file location in Settings.properties (chromeDriverPath, chromePath, runManagerPath, pathTestScenario)
 Test Case: The specific test case to be executed (e.g., TC01_Google_Login).
 Keyword Identification: Next, Executor.java will consult the TestScenarios.xlsx spreadsheet. It will search for the extracted test case name (e.g., TC01_Google_Login) within the "Test Case" column of the Business_Flow sheet.
 Keyword Sequence: Once the test case is found, Executor.java will identify the corresponding keyword names listed under columns like "KeyWord1," "KeyWord2," and so on (until the next blank cell is encountered). These keywords represent the specific actions to be performed in the test case. For example, login_Google and logout_Google might be keywords.
@@ -19,6 +21,7 @@ Within the identified keyword class, it will execute the methods corresponding t
 Execution Completion:
 After executing all the extracted keywords for the test case, Executor.java will close the web browser.
 
-[Can not be used as of now: Under progress: Finally, it will generate a test execution report and save it in two locations:
+[The below part can not be used as of now: Under progress: 
+Finally, it will generate a test execution report and save it in two locations:
 CurrentExecutions folder for immediate reference.
 AllExecutions folder for historical record-keeping.]

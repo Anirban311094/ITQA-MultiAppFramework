@@ -2,10 +2,12 @@ package com.SetupAuxiliaries.excelhandle;
 
 import java.util.ArrayList;
 
+import com.Results.GenerateReport.PassInfos;
+
 public class HandleExecutables {
-	public static String runManagerPath="C:\\Users\\Rahul Chakrabarty\\git\\ITQA-MultiAppFramework\\MultiAppFramework\\src\\main\\java\\com\\DataTables\\MainTables\\RunManager.xlsx";
-	public static String runManagerSheet="Google";
-	public static String pathTestScenario="C:\\Users\\Rahul Chakrabarty\\git\\ITQA-MultiAppFramework\\MultiAppFramework\\src\\main\\java\\com\\DataTables\\MainTables\\TestScenarios.xlsx";
+	public static String runManagerPath=PassInfos.getProperty("runManagerPath");//"C:\\Users\\Rahul Chakrabarty\\git\\ITQA-MultiAppFramework\\MultiAppFramework\\src\\main\\java\\com\\DataTables\\MainTables\\RunManager.xlsx";
+	public static String runManagerSheet=PassInfos.getProperty("Application");//"Google";Amazon
+	public static String pathTestScenario=PassInfos.getProperty("pathTestScenario");//"C:\\Users\\Rahul Chakrabarty\\git\\ITQA-MultiAppFramework\\MultiAppFramework\\src\\main\\java\\com\\DataTables\\MainTables\\TestScenarios.xlsx";
     
 	
 	 //get all Executable test cases in  arraylist
