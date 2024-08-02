@@ -7,6 +7,7 @@ About Framework:
 
 Execution Trigger: Execute the program by running the Executor.java class. This class acts as the central driver for your automation framework.
 Test Selection: Executor.java will first parse the RunManager.xlsx spreadsheet. It will look for rows where the "Execute" column contains the value "Yes."
+
 Test Case Details: For each identified row in RunManager.xlsx, the following information will be extracted:
 Application: The name of the application under test (e.g., Google / Amazon). Mention it in Settings.properties in DataTables Folder.
 In PassInfos.java update the Settings.properties file path
